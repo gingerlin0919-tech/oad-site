@@ -1,1301 +1,1324 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="zh-TW">
-<head>
+<!doctype html>
+<html lang="zh-Hant">
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>OAD.ai 繁體中文專網 ｜ TOP1業務績效者行為科學與高單價成交輔導</title>
-<meta content="找到最強團隊成員的底層密碼，把一個人的卓越，變成整支團隊能複製的標準。源自38年行為科學數據、1,000萬次實證。只需7分鐘，建立專屬頂尖人才基準。由在企業累積實戰經驗的Ginger親自輔導，將行為科學真正轉化為營收表現與團隊戰鬥力。" name="description"/>
-<!-- 字型引進：思源宋體、思源黑體、Cormorant Garamond 英文襯線 -->
+<title>頂尖業務複製顧問｜Ginger Lin</title>
+<meta content="七分鐘看出頂尖業務的特質，搭配一站式業績提升方案，把您的明星球員，複製成明星球隊。Ginger Lin 結合 OAD 行為科學、AI 帶人教練與 NLP 複製卓越，陪企業把一個人的業績，變成整個團隊的業績。" name="description"/>
+<meta content="頂尖業務複製顧問｜Ginger Lin" property="og:title"/>
+<meta content="業績，不該只靠一兩個人撐。七分鐘看出頂尖業務的特質，把您的明星球員，複製成明星球隊。" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Serif+TC:wght@500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
 <style>
-    :root {
-      /* 黑曜石金緻奢華旗艦風 (Full Dark Luxury Palette) */
-      --bg: #0A0C10;
-      --bg-card: #121620;
-      --bg-card-alt: #161B26;
-      --gold: #D4AF37;
-      --gold-deep: #F1D487;
-      --gold-light: #F8E8A2;
-      --gold-dark: #A8823F;
-      --text: #FFFFFF;
-      --text-body: #DCDFE8;
-      --text-muted: #9AA0B2;
-      --line: rgba(212, 175, 55, 0.32);
-      --line-soft: rgba(255, 255, 255, 0.1);
-      --shadow: 0 20px 48px rgba(0, 0, 0, 0.65);
-      --radius: 8px;
-      --maxw: 1200px;
-      --serif: "Noto Serif TC", "Noto Serif", Georgia, serif;
-      --sans: "Noto Sans TC", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --lat: "Cormorant Garamond", var(--serif);
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text-body);
-      font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.85;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1, h2, h3, h4, h5 {
-      font-family: var(--serif);
-      color: var(--text);
-      font-weight: 700;
-      line-height: 1.35;
-    }
-
-    p { margin-bottom: 1.25rem; }
-    p:last-child { margin-bottom: 0; }
-    a { color: inherit; text-decoration: none; }
-
-    .wrap {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* 頂部導覽列 HEADER */
-    .site-nav {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: rgba(10, 12, 16, 0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--line);
-      transition: all 0.3s ease;
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 76px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .brand-logo-img {
-      height: 38px;
-      width: auto;
-      object-fit: contain;
-    }
-
-    .brand-tag {
-      font-size: 11px;
-      letter-spacing: 1px;
-      padding: 3px 8px;
-      background: rgba(212, 175, 55, 0.12);
-      border: 1px solid var(--line);
-      color: var(--gold-deep);
-      border-radius: 4px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 14.5px;
-      font-weight: 500;
-      color: #E2E8F0;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover {
-      color: var(--gold-light);
-    }
-
-    /* 按鈕樣式 (高清晰黑金配色) */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px 28px;
-      font-family: var(--sans);
-      font-size: 15px;
-      font-weight: 700;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      text-align: center;
-    }
-
-    .btn-gold {
-      background: linear-gradient(135deg, #F8E8A2 0%, #D4AF37 50%, #B88E28 100%);
-      color: #0A0C10 !important;
-      border: none;
-      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.35);
-    }
-
-    .btn-gold:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(212, 175, 55, 0.5);
-      background: linear-gradient(135deg, #FFFFFF 0%, #E6CA75 50%, #D4AF37 100%);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--gold-deep);
-      border: 1px solid var(--line);
-    }
-
-    .btn-outline:hover {
-      background: rgba(212, 175, 55, 0.1);
-      border-color: var(--gold-deep);
-      color: #FFFFFF;
-    }
-
-    /* 區塊標準樣式 */
-    .section {
-      padding: 96px 0;
-      position: relative;
-    }
-
-    .section-head {
-      text-align: center;
-      max-width: 820px;
-      margin: 0 auto 60px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      font-family: var(--lat);
-      font-size: 14px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold-deep);
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-
-    .section-head h2 {
-      font-size: 34px;
-      letter-spacing: 0.5px;
-      margin-bottom: 16px;
-    }
-
-    .section-head p {
-      font-size: 16.5px;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-
-    /* HERO 旗艦首頁視覺 */
-    .hero {
-      padding: 100px 0 90px;
-      background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.12) 0%, rgba(10, 12, 16, 1) 70%);
-      border-bottom: 1px solid var(--line);
-      text-align: center;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      border-radius: 30px;
-      background: rgba(212, 175, 55, 0.1);
-      border: 1px solid var(--line);
-      color: var(--gold-light);
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 24px;
-      letter-spacing: 1px;
-    }
-
-    .hero h1 {
-      font-size: 46px;
-      line-height: 1.3;
-      max-width: 960px;
-      margin: 0 auto 24px;
-      background: linear-gradient(180deg, #FFFFFF 30%, #E2E8F0 70%, #D4AF37 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero p.lead {
-      font-size: 19px;
-      color: var(--text-body);
-      max-width: 800px;
-      margin: 0 auto 36px;
-      line-height: 1.8;
-    }
-
-    .hero-cta {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 48px;
-    }
-
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      max-width: 920px;
-      margin: 0 auto;
-      padding-top: 40px;
-      border-top: 1px solid var(--line-soft);
-    }
-
-    .stat-item h3 {
-      font-size: 36px;
-      color: var(--gold-deep);
-      font-family: var(--lat);
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .stat-item p {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin: 0;
-    }
-
-    /* 痛點與受眾情境 AUDIENCES */
-    .audiences-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--line-soft);
-      border-radius: var(--radius);
-      padding: 36px 30px;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: var(--line);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
-    }
-
-    .card-tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--gold);
-      padding: 3px 10px;
-      border-radius: 4px;
-      background: rgba(212, 175, 55, 0.1);
-      margin-bottom: 16px;
-    }
-
-    .card h3 {
-      font-size: 21px;
-      margin-bottom: 14px;
-      color: #FFFFFF;
-    }
-
-    .card p {
-      font-size: 14.5px;
-      color: var(--text-body);
-      line-height: 1.75;
-    }
-
-    .card-solution {
-      margin-top: 20px;
-      padding-top: 18px;
-      border-top: 1px dashed var(--line-soft);
-      font-size: 13.5px;
-      color: var(--gold-deep);
-      font-weight: 500;
-    }
-
-    /* 後台動態管理 DASHBOARD */
-    .dashboard-preview {
-      background: var(--bg-card-alt);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 40px;
-      box-shadow: var(--shadow);
-    }
-
-    .dashboard-tabs {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 30px;
-      border-bottom: 1px solid var(--line-soft);
-      padding-bottom: 16px;
-      overflow-x: auto;
-    }
-
-    .tab-btn {
-      background: transparent;
-      border: 1px solid var(--line-soft);
-      color: var(--text-muted);
-      padding: 10px 22px;
-      border-radius: 6px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      white-space: nowrap;
-    }
-
-    .tab-btn.active, .tab-btn:hover {
-      background: rgba(212, 175, 55, 0.15);
-      border-color: var(--gold);
-      color: #FFFFFF;
-    }
-
-    .tab-pane {
-      display: none;
-    }
-
-    .tab-pane.active {
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .tab-desc h3 {
-      font-size: 24px;
-      margin-bottom: 16px;
-      color: var(--gold-deep);
-    }
-
-    .tab-desc p {
-      font-size: 15px;
-      color: var(--text-body);
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .tab-points {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .tab-points li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 14px;
-      color: #FFFFFF;
-    }
-
-    .tab-points li::before {
-      content: "✦";
-      color: var(--gold);
-      font-size: 14px;
-    }
-
-    .mock-visual {
-      background: rgba(10, 12, 16, 0.8);
-      border: 1px solid var(--line-soft);
-      border-radius: 8px;
-      padding: 24px;
-      font-family: monospace;
-      font-size: 13px;
-      color: var(--gold-deep);
-    }
-
-    /* 工具比較表 COMPARISON */
-    .compare-table-wrap {
-      background: var(--bg-card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      overflow-x: auto;
-      box-shadow: var(--shadow);
-    }
-
-    .compare-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 14.5px;
-    }
-
-    .compare-table th, .compare-table td {
-      padding: 18px 20px;
-      border-bottom: 1px solid var(--line-soft);
-    }
-
-    .compare-table th {
-      background: rgba(10, 12, 16, 0.9);
-      color: var(--text-muted);
-      font-weight: 600;
-      font-size: 14px;
-    }
-
-    .compare-table th.col-oad {
-      background: rgba(212, 175, 55, 0.15);
-      color: var(--gold-deep);
-      font-size: 16px;
-      font-weight: 700;
-      border-left: 2px solid var(--gold);
-      border-right: 2px solid var(--gold);
-    }
-
-    .compare-table td.col-oad {
-      background: rgba(212, 175, 55, 0.05);
-      color: #FFFFFF;
-      font-weight: 600;
-      border-left: 2px solid var(--gold);
-      border-right: 2px solid var(--gold);
-    }
-
-    .compare-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    /* 專家顧問 GINGER LIN */
-    .coach-card {
-      background: var(--bg-card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 48px;
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 48px;
-      align-items: center;
-      box-shadow: var(--shadow);
-    }
-
-    .coach-photo-wrap {
-      position: relative;
-      text-align: center;
-    }
-
-    .coach-photo {
-      width: 260px;
-      height: 320px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 2px solid var(--line);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    }
-
-    .coach-info h3 {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-
-    .coach-title {
-      font-size: 15px;
-      color: var(--gold-deep);
-      font-weight: 600;
-      margin-bottom: 20px;
-      letter-spacing: 0.5px;
-    }
-
-    .coach-bio {
-      font-size: 15px;
-      color: var(--text-body);
-      line-height: 1.8;
-      margin-bottom: 24px;
-    }
-
-    .coach-highlights {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      background: rgba(10, 12, 16, 0.6);
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid var(--line-soft);
-    }
-
-    .highlight-item h4 {
-      font-size: 14px;
-      color: var(--gold-light);
-      margin-bottom: 4px;
-    }
-
-    .highlight-item p {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin: 0;
-    }
-
-    /* 表單預約 BOOKING */
-    .booking-box {
-      background: var(--bg-card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 48px;
-      max-width: 860px;
-      margin: 0 auto;
-      box-shadow: var(--shadow);
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .form-group.full {
-      grid-column: 1 / -1;
-    }
-
-    .form-group label {
-      font-size: 14px;
-      color: #E2E8F0;
-      font-weight: 600;
-    }
-
-    .form-group input, .form-group select, .form-group textarea {
-      background: rgba(10, 12, 16, 0.8);
-      border: 1px solid var(--line-soft);
-      color: #FFFFFF;
-      padding: 12px 16px;
-      border-radius: 6px;
-      font-size: 14.5px;
-      font-family: inherit;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-      border-color: var(--gold);
-    }
-
-    .form-msg {
-      padding: 14px 18px;
-      border-radius: 6px;
-      font-size: 14px;
-      margin-top: 16px;
-      display: none;
-    }
-
-    .form-msg.success {
-      background: rgba(76, 217, 100, 0.15);
-      border: 1px solid #4cd964;
-      color: #70f088;
-    }
-
-    .form-msg.error {
-      background: rgba(255, 59, 48, 0.15);
-      border: 1px solid #ff3b30;
-      color: #ff6b64;
-    }
-
-    /* 頁尾 FOOTER */
-    .site-footer {
-      background: #050608;
-      border-top: 1px solid var(--line);
-      padding: 70px 0 40px;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 32px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid var(--line-soft);
-    }
-
-    .footer-brand-wrap {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 28px;
-    }
-
-    .footer-logo-card {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 10px 18px;
-      border-radius: 6px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .footer-logo-img {
-      height: 44px;
-      width: auto;
-      object-fit: contain;
-    }
-
-    .footer-bottom {
-      padding-top: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.8;
-    }
-
-    .footer-nav {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-      flex-wrap: wrap;
-    }
-
-    .footer-nav a {
-      font-size: 14px;
-      color: var(--text-muted);
-      transition: color 0.2s;
-    }
-
-    .footer-nav a:hover {
-      color: var(--gold-light);
-    }
-
-    /* 懸浮按鈕 */
-    .sticky-cta {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 990;
-    }
-
-    @media (max-width: 900px) {
-      .hero h1 { font-size: 32px; }
-      .audiences-grid { grid-template-columns: 1fr; }
-      .hero-stats { grid-template-columns: 1fr 1fr; }
-      .coach-card { grid-template-columns: 1fr; text-align: center; }
-      .coach-photo-wrap { margin: 0 auto; }
-      .coach-highlights { grid-template-columns: 1fr; }
-      .form-grid { grid-template-columns: 1fr; }
-      .tab-pane.active { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-    }
-    @media (max-width: 540px) {
-      .brand-tag { display: none; }
-    }
-  </style>
+  :root{
+    --ink:#0F0F0F;
+    --ink-2:#1C1C1C;
+    --cream:#F2EBDD;
+    --gold:#C6A15B;
+    --gold-deep:#A8823F;
+    --text:#272B29;
+    --bg:#F7F4EE;
+    --card:#FFFFFF;
+    --line: rgba(198,161,91,0.38);
+    --line-soft: rgba(10,10,10,0.12);
+    --shadow: 0 20px 48px rgba(10,10,10,0.14);
+    --radius: 2px;
+    --maxw: 1120px;
+    --serif: "Noto Serif TC", "Noto Serif", serif;
+    --sans: "Noto Sans TC", "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    --lat: "Cormorant Garamond", var(--serif);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,h4{
+    font-family:var(--serif);
+    color:var(--ink);
+    margin:0;
+    text-wrap:balance;
+    font-weight:600;
+  }
+
+  p{margin:0;}
+  a{color:inherit;}
+  ul{margin:0; padding:0; list-style:none;}
+  img{max-width:100%; display:block;}
+  button{font-family:inherit;}
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  .eyebrow{
+    font-family:var(--lat);
+    font-style:italic;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+    font-size:14px;
+  }
+  .step-kicker{
+    font-family:var(--lat);
+    font-style:italic;
+    font-weight:700;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+    font-size:13px;
+    margin-bottom:10px;
+  }
+
+  .section{
+    padding:112px 0;
+    scroll-margin-top:84px;
+  }
+  @media (max-width:760px){
+    .section{padding:72px 0;}
+  }
+
+  .section-head{
+    max-width:760px;
+    margin:0 0 56px;
+  }
+  .section-head .eyebrow{display:block; margin-bottom:18px;}
+  .section-head h2{font-size:clamp(26px,3.6vw,38px); line-height:1.5;}
+  .rule{
+    width:56px;height:1px;background:var(--gold);
+    margin:22px 0;
+    border:none;
+  }
+
+  /* ---------- Nav ---------- */
+  header.nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:transparent;
+    transition:background .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
+  }
+  header.nav.scrolled{
+    background:rgba(10,10,10,0.85);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    box-shadow:0 6px 24px rgba(0,0,0,0.14);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:20px 28px;
+    display:flex; align-items:center; justify-content:flex-end;
+  }
+  .logo{
+    font-family:var(--serif); font-weight:600; font-size:17px;
+    color:var(--cream); letter-spacing:0.02em;
+    text-decoration:none; white-space:nowrap;
+  }
+  .nav-links{
+    display:flex; align-items:center; gap:34px;
+  }
+  .nav-links a{
+    color:var(--cream); text-decoration:none; font-size:14.5px;
+    opacity:0.88; position:relative;
+  }
+  .nav-links a:hover{opacity:1;}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:var(--sans); font-weight:700; font-size:14.5px;
+    letter-spacing:0.02em;
+    padding:13px 28px;
+    border:1px solid transparent;
+    text-decoration:none;
+    cursor:pointer;
+    border-radius:var(--radius);
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .btn-gold{
+    background:var(--gold); color:var(--ink);
+  }
+  .btn-gold:hover{background:#d4b073; box-shadow:0 10px 24px rgba(198,161,91,0.35);}
+  .btn-outline{
+    background:transparent; color:var(--cream); border-color:rgba(242,235,221,0.5);
+  }
+  .btn-outline:hover{border-color:var(--cream);}
+  .btn-outline-ink{
+    background:transparent; color:var(--ink); border-color:var(--ink);
+  }
+  .btn-outline-ink:hover{background:var(--ink); color:var(--cream);}
+  .nav-cta{padding:11px 22px; font-size:13.5px;}
+
+  .nav-toggle{
+    display:none; background:none; border:none; color:var(--cream);
+    width:32px; height:24px; position:relative; cursor:pointer; padding:0;
+  }
+  .nav-toggle span, .nav-toggle::before, .nav-toggle::after{
+    content:""; position:absolute; left:0; right:0; height:2px; background:var(--cream);
+    transition:transform .25s ease, opacity .25s ease;
+  }
+  .nav-toggle::before{top:2px;}
+  .nav-toggle span{top:11px;}
+  .nav-toggle::after{top:20px;}
+  .nav-toggle.open::before{transform:translateY(9px) rotate(45deg);}
+  .nav-toggle.open::after{transform:translateY(-9px) rotate(-45deg);}
+  .nav-toggle.open span{opacity:0;}
+
+  @media (max-width:900px){
+    .nav-links{
+      position:fixed; inset:0 0 0 auto; top:0; height:100vh; width:78vw; max-width:320px;
+      background:var(--ink); flex-direction:column; align-items:flex-start;
+      padding:96px 32px 40px; gap:26px;
+      transform:translateX(100%); transition:transform .35s ease;
+    }
+    .nav-links.open{transform:translateX(0);}
+    .nav-links a{font-size:17px; opacity:1;}
+    .nav-cta{margin-top:12px;}
+    .nav-toggle{display:block;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse at 15% -10%, rgba(198,161,91,0.16), transparent 45%),
+      linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%);
+    color:var(--cream);
+    padding:180px 0 120px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; right:-8%; top:12%; width:560px; height:560px;
+    background:var(--hero-lines);
+    opacity:0.5;
+    pointer-events:none;
+  }
+  @media (max-width:900px){.hero::after{display:none;}}
+  .hero-inner{max-width:760px; position:relative; z-index:1;}
+  .hero h1{
+    color:var(--cream);
+    font-size:clamp(32px,5vw,52px);
+    line-height:1.42;
+    margin:22px 0 26px;
+  }
+  .hero .lead{
+    font-size:17px; line-height:1.95; color:rgba(242,235,221,0.86);
+    max-width:600px; margin-bottom:34px;
+  }
+  .hero .prompt{
+    font-size:15.5px; color:var(--gold); font-weight:700; margin-bottom:20px;
+  }
+  .hero-cards{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:14px;
+    margin-bottom:40px;
+  }
+  @media (max-width:700px){.hero-cards{grid-template-columns:1fr;}}
+  .hero-card{
+    border:1px solid rgba(242,235,221,0.22);
+    background:rgba(242,235,221,0.05);
+    padding:18px 18px 20px;
+    font-size:14.5px; line-height:1.7; color:var(--cream);
+  }
+  .hero-card .n{
+    font-family:var(--lat); color:var(--gold); font-size:22px; font-style:italic; font-weight:600;
+    display:block; margin-bottom:8px;
+  }
+  .hero-actions{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:22px;}
+  @media (max-width:700px){
+    .hero-actions{flex-direction:column; align-items:stretch;}
+    .hero-actions .btn{width:100%; text-align:center;}
+  }
+  .hero-trust{font-size:13.5px; color:rgba(242,235,221,0.62); line-height:1.9;}
+
+  /* ---------- Cards / grids ---------- */
+  .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  .grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:26px;}
+  @media (max-width:860px){.grid-3{grid-template-columns:1fr;} .grid-2{grid-template-columns:1fr;}}
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line-soft);
+    padding:32px 28px;
+    box-shadow:var(--shadow);
+  }
+  .card .n{
+    font-family:var(--lat); font-style:italic; font-weight:600; color:var(--gold-deep);
+    font-size:20px; display:block; margin-bottom:14px;
+  }
+  .card h3{font-size:18px; color:var(--ink); line-height:1.55; margin-bottom:10px;}
+  .card p{font-size:14.5px; color:#4a5049; line-height:1.85;}
+
+  .pullquote{
+    font-family:var(--serif); font-size:clamp(20px,2.6vw,26px); color:var(--ink);
+    line-height:1.75; max-width:820px; margin:56px 0 0; padding-top:32px; border-top:1px solid var(--line);
+  }
+
+  /* ---------- Comparison table ---------- */
+  .cmp-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  table.cmp{
+    width:100%; border-collapse:collapse; min-width:760px;
+    background:var(--card); box-shadow:var(--shadow);
+  }
+  table.cmp th, table.cmp td{
+    text-align:left; padding:18px 20px; font-size:14.5px; line-height:1.75;
+    border-bottom:1px solid var(--line-soft); vertical-align:top;
+  }
+  table.cmp thead th{
+    font-family:var(--serif); font-weight:600; color:var(--cream); background:var(--ink);
+    font-size:14px;
+  }
+  table.cmp tbody th{
+    font-weight:700; color:var(--ink); background:rgba(198,161,91,0.06); white-space:nowrap;
+  }
+  table.cmp tbody tr:last-child td, table.cmp tbody tr:last-child th{border-bottom:none;}
+
+  @media (max-width:760px){
+    table.cmp thead{display:none;}
+    table.cmp, table.cmp tbody, table.cmp tr, table.cmp td, table.cmp th{display:block; width:100%; min-width:0;}
+    table.cmp{box-shadow:none; background:none;}
+    table.cmp tr{background:var(--card); box-shadow:var(--shadow); margin-bottom:16px; padding:6px 4px;}
+    table.cmp tbody th{background:none; border-bottom:1px solid var(--line);}
+    table.cmp td{border-bottom:none; padding:12px 20px;}
+    table.cmp td::before{
+      content:attr(data-label); display:block; font-family:var(--lat); font-style:italic;
+      color:var(--gold-deep); font-weight:600; font-size:12.5px; letter-spacing:0.04em; margin-bottom:4px;
+    }
+  }
+
+  .source-link{
+    display:inline-flex; align-items:center; gap:8px; margin-top:18px;
+    font-size:13.5px; color:var(--ink-2); text-decoration:none; border-bottom:1px solid var(--gold);
+    padding-bottom:2px;
+  }
+
+  /* ---------- Section 4: contrast lists ---------- */
+  .contrast{
+    display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border:1px solid var(--line-soft); background:var(--card); box-shadow:var(--shadow);
+  }
+  @media (max-width:760px){.contrast{grid-template-columns:1fr;}}
+  .contrast-col{padding:36px 32px;}
+  .contrast-col.old{border-right:1px solid var(--line-soft); background:#FBF9F5;}
+  @media (max-width:760px){.contrast-col.old{border-right:none; border-bottom:1px solid var(--line-soft);}}
+  .contrast-col h4{
+    font-family:var(--lat); font-style:italic; font-size:14px; letter-spacing:0.06em;
+    text-transform:uppercase; color:#8a8073; margin-bottom:20px; font-weight:600;
+  }
+  .contrast-col.new h4{color:var(--gold-deep);}
+  .contrast-col li{
+    font-size:15px; line-height:1.8; padding:12px 0; border-top:1px solid var(--line-soft);
+  }
+  .contrast-col li:first-of-type{border-top:none;}
+  .contrast-col.old li{color:#6b6459;}
+  .contrast-col.new li{color:var(--text); font-weight:500;}
+
+  /* ---------- Section 5: three-layer diagram ---------- */
+  .layers{max-width:820px; margin:0 auto 56px; position:relative;}
+  .layer{
+    display:grid; grid-template-columns:64px 1fr; gap:24px;
+    padding:26px 0; position:relative;
+  }
+  .layer:not(:last-child)::after{
+    content:""; position:absolute; left:31px; top:64px; bottom:-18px; width:1px;
+    background:var(--line);
+  }
+  .layer .dot{
+    width:64px; height:64px; border:1px solid var(--gold); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--lat); font-style:italic; font-weight:600; color:var(--gold-deep); font-size:15px;
+    background:var(--bg); flex-shrink:0;
+  }
+  .layer h4{font-family:var(--serif); font-size:18px; color:var(--ink); margin-bottom:8px;}
+  .layer p{font-size:14.5px; color:#4a5049; line-height:1.85;}
+
+  .qlist{
+    max-width:820px; margin:0 auto; display:grid; gap:12px;
+  }
+  .qlist li{
+    display:flex; gap:14px; font-size:15px; padding:16px 20px;
+    background:var(--card); border-left:2px solid var(--gold); box-shadow:var(--shadow);
+  }
+
+  .dash-list{display:grid; gap:9px;}
+  .dash-list li{padding-left:18px; position:relative; font-size:14px; line-height:1.75;}
+  .dash-list li::before{content:"–"; position:absolute; left:0; color:var(--gold-deep); font-weight:700;}
+
+  /* ---------- Dark band ---------- */
+  .band-dark{background:var(--ink); color:var(--cream);}
+  .band-dark .section-head h2{color:var(--cream);}
+  .band-dark .card{background:rgba(242,235,221,0.06); border-color:rgba(242,235,221,0.14); box-shadow:none;}
+  .band-dark .card h3{color:var(--cream);}
+  .band-dark .card p{color:rgba(242,235,221,0.72);}
+  .band-dark .card .n{color:var(--gold);}
+  .band-dark .eyebrow{color:var(--gold);}
+  .band-dark p, .band-dark li{color:rgba(242,235,221,0.82);}
+
+  /* ---------- Two-column suitability ---------- */
+  .suit{display:grid; grid-template-columns:1fr 1fr; gap:26px;}
+  @media (max-width:760px){.suit{grid-template-columns:1fr;}}
+  .suit-col{padding:34px 30px; border-top:3px solid var(--gold); background:var(--card); box-shadow:var(--shadow);}
+  .suit-col.no{border-top-color:#9c9384;}
+  .suit-col h4{font-family:var(--serif); font-size:19px; margin-bottom:20px; color:var(--ink);}
+  .suit-col li{
+    font-size:14.5px; line-height:1.75; padding:11px 0 11px 26px; position:relative;
+    border-top:1px solid var(--line-soft);
+  }
+  .suit-col li:first-child{border-top:none;}
+  .suit-col li::before{
+    position:absolute; left:0; top:11px; font-family:var(--lat); font-weight:700;
+  }
+  .suit-col.yes li::before{content:"✓"; color:var(--gold-deep);}
+  .suit-col.no li::before{content:"–"; color:#9c9384;}
+
+  /* ---------- Science callouts ---------- */
+  .sci-basics{display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-bottom:40px;}
+  @media (max-width:760px){.sci-basics{grid-template-columns:1fr;}}
+  .sci-basic{padding:28px 30px; background:var(--card); box-shadow:var(--shadow);}
+  .sci-basic h4{font-family:var(--serif); font-size:18px; color:var(--ink); margin-bottom:10px;}
+  .sci-basic p{font-size:14.5px; color:#4a5049;}
+
+  .callout{
+    border:1px solid var(--line); background:rgba(198,161,91,0.06);
+    padding:24px 28px; font-size:14px; line-height:1.85; color:#463f2e;
+    margin:22px 0;
+  }
+  .callout.warn{
+    border-color:var(--ink); background:rgba(10,10,10,0.05); color:var(--text);
+  }
+  .callout strong{color:var(--ink);}
+
+  /* ---------- Process timeline ---------- */
+  .timeline{max-width:860px; margin:0 auto; display:grid; gap:0;}
+  .tl-step{
+    display:grid; grid-template-columns:96px 1fr; gap:26px; padding:34px 0;
+    border-top:1px solid var(--line-soft);
+  }
+  .tl-step:first-child{border-top:none;}
+  .tl-num{
+    font-family:var(--lat); font-style:italic; font-weight:600; color:var(--gold-deep); font-size:34px; line-height:1;
+  }
+  .tl-step h4{font-family:var(--serif); font-size:19px; color:var(--ink); margin-bottom:10px;}
+  .tl-step p{font-size:14.5px; color:#4a5049; margin-bottom:10px;}
+  .tl-step ul{margin-top:10px; display:grid; gap:6px;}
+  .tl-step ul li{font-size:14px; color:#4a5049; padding-left:16px; position:relative;}
+  .tl-step ul li::before{content:"·"; position:absolute; left:0; color:var(--gold-deep); font-weight:700;}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:820px; margin:0 auto;}
+  .faq details{
+    border-bottom:1px solid var(--line-soft); padding:22px 0;
+  }
+  .faq details:first-child{border-top:1px solid var(--line-soft);}
+  .faq summary{
+    cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;
+    gap:20px; font-family:var(--serif); font-size:16.5px; color:var(--ink); font-weight:600;
+  }
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary .plus{
+    flex-shrink:0; width:26px; height:26px; border:1px solid var(--gold); border-radius:50%;
+    position:relative;
+  }
+  .faq summary .plus::before, .faq summary .plus::after{
+    content:""; position:absolute; background:var(--gold-deep); top:50%; left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .faq summary .plus::before{width:10px; height:1.5px;}
+  .faq summary .plus::after{width:1.5px; height:10px; transition:transform .25s ease;}
+  .faq details[open] summary .plus::after{transform:translate(-50%,-50%) scaleY(0);}
+  .faq .faq-body{
+    font-size:14.5px; line-height:1.9; color:#4a5049; padding:16px 46px 0 0;
+  }
+  .faq summary:focus-visible{outline:2px solid var(--gold-deep); outline-offset:4px;}
+
+  /* ---------- Final CTA ---------- */
+  .cta-final{
+    background:linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%);
+    color:var(--cream); text-align:left; padding:130px 0;
+  }
+  .cta-final h2{color:var(--cream); font-size:clamp(26px,4vw,38px); max-width:720px; margin-bottom:22px;}
+  .cta-final .lead{font-size:16px; color:rgba(242,235,221,0.82); max-width:600px; margin-bottom:34px;}
+  .cta-final .below{font-size:13.5px; color:rgba(242,235,221,0.62); margin:18px 0 30px;}
+  .cta-final .trust{font-size:13px; color:rgba(242,235,221,0.5); max-width:600px; padding-top:22px; border-top:1px solid rgba(242,235,221,0.18);}
+
+  /* ---------- Booking form ---------- */
+  .form-card{
+    background:var(--card); box-shadow:var(--shadow); padding:44px;
+    display:grid; grid-template-columns:1fr 1fr; gap:22px;
+  }
+  @media (max-width:760px){.form-card{grid-template-columns:1fr; padding:28px 22px;}}
+  .field{display:flex; flex-direction:column; gap:8px;}
+  .field.full{grid-column:1 / -1;}
+  .field label{font-size:13.5px; font-weight:700; color:var(--ink);}
+  .field .opt{font-weight:400; color:#8a8073;}
+  .field input, .field select, .field textarea{
+    font-family:var(--sans); font-size:14.5px; padding:12px 14px; border:1px solid #d9d2c2;
+    background:#FCFAF5; color:var(--text); border-radius:var(--radius);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:none; border-color:var(--gold-deep); box-shadow:0 0 0 3px rgba(198,161,91,0.18);
+  }
+  .field textarea{resize:vertical; min-height:96px;}
+  .time-slots{display:grid; gap:10px;}
+  .consent{
+    grid-column:1/-1; display:flex; gap:12px; align-items:flex-start; font-size:13.5px;
+    color:#4a5049; line-height:1.7; padding-top:6px;
+  }
+  .consent input{margin-top:3px;}
+  .consent a{color:var(--ink-2); text-decoration:underline;}
+  .form-msg{
+    grid-column:1/-1; font-size:14px; padding:14px 18px; border-left:2px solid var(--gold-deep);
+    background:rgba(198,161,91,0.08); display:none;
+  }
+  .form-msg.show{display:block;}
+  .form-submit{grid-column:1/-1; display:flex; justify-content:flex-start;}
+
+  /* ---------- Illustration placeholder ---------- */
+  .art-block{
+    border:1px dashed var(--line); background:repeating-linear-gradient(135deg, rgba(10,10,10,0.04) 0 12px, transparent 12px 24px);
+    display:flex; align-items:center; justify-content:center; text-align:center; padding:48px 24px;
+    min-height:220px; margin:44px 0;
+  }
+  .art-block .label{
+    font-size:13px; color:var(--ink-2); max-width:340px; line-height:1.8;
+  }
+  .art-block .label b{display:block; font-family:var(--serif); font-size:15px; margin-bottom:6px; color:var(--ink);}
+
+  /* ---------- Footer ---------- */
+  footer{background:#0A0A0A; color:rgba(242,235,221,0.72); padding:64px 0 110px;}
+  footer .foot-top{display:flex; justify-content:space-between; gap:32px; flex-wrap:wrap; padding-bottom:36px; border-bottom:1px solid rgba(242,235,221,0.12);}
+  footer .foot-name{font-family:var(--serif); color:var(--cream); font-size:18px; margin-bottom:8px;}
+  footer .foot-role{font-size:13.5px; color:rgba(242,235,221,0.6);}
+  .foot-oad{display:flex; align-items:center; gap:12px; margin-top:18px;}
+  .foot-oad-label{font-size:11.5px; color:rgba(242,235,221,0.48); text-transform:uppercase; letter-spacing:0.08em;}
+  .foot-oad-logo{height:26px; width:auto; background:#F2EBDD; padding:6px 10px; border-radius:3px;}
+  footer .foot-links{display:flex; gap:26px; flex-wrap:wrap; font-size:13.5px;}
+  footer .foot-links a{text-decoration:none; color:rgba(242,235,221,0.75);}
+  footer .foot-links a:hover{color:var(--gold);}
+  footer .foot-note{font-size:12.5px; line-height:1.9; color:rgba(242,235,221,0.42); padding-top:28px; max-width:680px;}
+
+  /* ---------- Mobile sticky CTA ---------- */
+  .sticky-cta{
+    display:none; position:fixed; left:0; right:0; bottom:0; z-index:90;
+    background:rgba(10,10,10,0.96); backdrop-filter:blur(8px);
+    padding:12px 18px; padding-bottom:calc(12px + env(safe-area-inset-bottom));
+    box-shadow:0 -8px 24px rgba(0,0,0,0.18);
+  }
+  .sticky-cta .btn{width:100%;}
+  @media (max-width:760px){
+    .sticky-cta{display:block;}
+    body{padding-bottom:74px;}
+  }
+
+  .skip-link{
+    position:absolute; left:-999px; top:0; background:var(--gold); color:var(--ink);
+    padding:10px 16px; z-index:200; font-size:14px;
+  }
+  .skip-link:focus{left:12px; top:12px;}
+
+  :focus-visible{outline:2px solid var(--gold-deep); outline-offset:3px;}
+
+  /* ---------- 2026-11 改版新增 ---------- */
+  .hero-slogan{
+    font-family:var(--serif); font-size:clamp(18px,2.3vw,23px); line-height:1.75;
+    color:var(--gold); margin:0 0 22px; max-width:720px; font-weight:600;
+  }
+  .section-lead{max-width:760px; font-size:16px; color:#4a5049; line-height:1.95; margin:-24px 0 40px;}
+  .sub-h{font-size:20px; margin:56px 0 22px;}
+  .fine{font-size:13px; color:#6b6459; margin-top:18px; line-height:1.8;}
+  .fine a,.fine-in a{color:var(--gold-deep);}
+  .muted{color:#6b6459;}
+  .grid-4{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  @media (max-width:1000px){.grid-4{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){.grid-4{grid-template-columns:1fr;}}
+  .quote-card h3{font-size:17.5px;}
+  .hr-note{
+    margin-top:32px; padding:18px 22px; border-left:3px solid var(--gold);
+    background:rgba(198,161,91,0.08); font-size:15px; max-width:820px;
+  }
+  .cite{display:inline-block; margin-left:6px; font-size:12.5px; color:var(--gold-deep); text-decoration:none; border-bottom:1px solid var(--line); white-space:nowrap;}
+  .cite:hover{border-bottom-color:var(--gold-deep);}
+  table.cmp.cmp-research tbody th{white-space:normal; min-width:150px;}
+  table.cmp.cmp-ai tbody th{white-space:normal; width:34%; font-weight:500; color:var(--text); background:rgba(198,161,91,0.05);}
+  table.cmp .basis{display:block; margin-top:8px; font-size:12.5px; color:var(--gold-deep);}
+  table.cmp td.num{font-family:var(--serif); font-weight:600; color:var(--ink); white-space:nowrap;}
+  table.cmp tr.total th, table.cmp tr.total td{background:rgba(198,161,91,0.12); font-weight:700;}
+  @media (max-width:760px){
+    table.cmp tr.total td[data-label="算法"]{display:none;}
+    table.cmp.cmp-ai tbody th{width:100%;}
+  }
+
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; counter-reset:none;}
+  @media (max-width:900px){.steps{grid-template-columns:1fr;}}
+  .step{background:var(--card); border:1px solid var(--line-soft); border-top:3px solid var(--gold); padding:30px 26px; box-shadow:var(--shadow);}
+  .step h3{font-size:19px; margin-bottom:12px;}
+  .step p{font-size:14.5px; color:#4a5049; line-height:1.9;}
+  .step p + p{margin-top:12px;}
+  .callout.human{margin-top:36px;}
+  .callout p{margin-top:8px;}
+  .readers{margin-top:40px;}
+  .reader{border-top:1px solid var(--line); padding-top:18px;}
+  .reader .who{font-family:var(--serif); font-weight:700; color:var(--gold-deep); font-size:17px; display:block; margin-bottom:8px;}
+  .reader p{font-size:14.5px; color:#4a5049; line-height:1.85;}
+
+  .about{display:grid; grid-template-columns:320px 1fr; gap:56px; align-items:start;}
+  @media (max-width:900px){.about{grid-template-columns:1fr; gap:32px;}}
+  .about-photo img{width:100%; height:auto; aspect-ratio:2/3; object-fit:cover; box-shadow:var(--shadow);}
+  @media (max-width:900px){.about-photo img{max-width:300px;}}
+  .about-name{font-family:var(--serif); font-weight:700; color:var(--ink); font-size:19px; margin-top:18px;}
+  .about-role{font-size:13.5px; color:#6b6459; margin-top:4px;}
+  .about-body .eyebrow{display:block; margin-bottom:14px;}
+  .about-hook{font-size:clamp(22px,2.8vw,30px); line-height:1.55; margin-bottom:24px;}
+  .about-body > p{font-size:15.5px; line-height:1.95; margin-bottom:14px;}
+  .creds{margin:30px 0; border-top:1px solid var(--line);}
+  .cred{padding:20px 0; border-bottom:1px solid var(--line-soft);}
+  .cred h4{font-size:17px; margin-bottom:8px;}
+  .cred p, .cred li{font-size:14.5px; color:#4a5049; line-height:1.85;}
+  .cred .dash-list{margin:10px 0;}
+  .fine-in{font-size:13px !important; color:#6b6459 !important; margin-top:10px; padding:12px 14px; background:rgba(198,161,91,0.07);}
+  .about-close{font-family:var(--serif); font-size:17px !important; color:var(--ink); line-height:1.9 !important;}
+
+  .stat-row{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:760px){.stat-row{grid-template-columns:1fr;}}
+  .stat{background:var(--card); border:1px solid var(--line-soft); padding:26px 24px; box-shadow:var(--shadow);}
+  .stat-num{font-family:var(--lat); font-weight:600; font-size:48px; line-height:1; color:var(--gold-deep); display:block; margin-bottom:10px;}
+  .stat-num small{font-family:var(--serif); font-size:18px; margin-left:4px;}
+  .stat p{font-size:14.5px; color:#4a5049;}
+  .calc-box{
+    margin-top:40px; padding:30px 32px; background:var(--ink); color:var(--cream);
+    display:flex; justify-content:space-between; align-items:center; gap:28px; flex-wrap:wrap;
+  }
+  .calc-box h3{color:var(--cream); font-size:20px; margin-bottom:6px;}
+  .calc-box .muted{color:rgba(242,235,221,0.7); font-size:14px;}
+  .calc-steps{margin:12px 0 0 20px; padding:0; list-style:decimal; font-size:14px; color:rgba(242,235,221,0.88); line-height:1.9;}
+  .calc-box .btn{flex-shrink:0;}
+  @media (max-width:700px){.calc-box{padding:24px 20px;} .calc-box .btn{width:100%;}}
+
+  .roi{display:grid; grid-template-columns:1.05fr 1fr; gap:28px;}
+  @media (max-width:900px){.roi{grid-template-columns:1fr;}}
+  .roi-table{border:1px solid rgba(242,235,221,0.22); background:rgba(242,235,221,0.05); padding:26px 26px 18px;}
+  .roi-title{font-family:var(--serif); color:var(--cream); font-size:16px; margin-bottom:16px;}
+  .roi-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; row-gap:0;}
+  .roi-grid span{padding:14px 6px; border-bottom:1px solid rgba(242,235,221,0.14); font-size:14.5px;}
+  .roi-h{font-family:var(--lat); font-style:italic; letter-spacing:0.08em; color:var(--gold); font-size:14px !important;}
+  .roi-k{color:rgba(242,235,221,0.8);}
+  .roi-b{color:rgba(242,235,221,0.55); font-family:var(--serif); font-size:17px !important;}
+  .roi-a{color:var(--gold); font-family:var(--serif); font-weight:700; font-size:18px !important;}
+  .roi-cards{display:grid; gap:14px;}
+  .roi-card{border:1px solid rgba(242,235,221,0.22); background:rgba(242,235,221,0.05); padding:18px 22px;}
+  .roi-label{font-size:13.5px; color:rgba(242,235,221,0.7);}
+  .roi-big{font-family:var(--serif); font-weight:700; color:var(--gold); font-size:21px; margin:4px 0 6px;}
+  .roi-card p:last-child{font-size:13.5px; color:rgba(242,235,221,0.75); line-height:1.75;}
+  .roi-note{margin-top:24px; font-size:13px; color:rgba(242,235,221,0.6); max-width:820px;}
+
+  .founding{padding:80px 0;}
+  .founding-box{border:1px solid var(--gold); padding:44px 40px; text-align:center; background:linear-gradient(180deg,#fff, #FBF9F5);}
+  .founding-box .eyebrow{display:block; margin-bottom:12px;}
+  .founding-box h2{font-size:clamp(24px,3vw,32px); margin-bottom:16px;}
+  .founding-box p{max-width:640px; margin:0 auto 26px; font-size:15.5px; color:#4a5049;}
+  @media (max-width:700px){.founding-box{padding:32px 22px;}}
+
+  .foot-contact{display:flex; gap:18px; flex-wrap:wrap; margin-top:14px;}
+  .foot-contact a{color:var(--gold); text-decoration:none; font-size:14px; border-bottom:1px solid rgba(198,161,91,0.4);}
+
+
+  /* 修正：格狀欄位被內容撐寬造成橫向捲動 */
+  .grid-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .grid-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .grid-4{grid-template-columns:repeat(4,minmax(0,1fr));}
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .stat-row{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .roi{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);}
+  .about{grid-template-columns:320px minmax(0,1fr);}
+  @media (max-width:1000px){.grid-4{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media (max-width:900px){.steps,.roi,.about{grid-template-columns:minmax(0,1fr);}}
+  @media (max-width:860px){.grid-3,.grid-2{grid-template-columns:minmax(0,1fr);}}
+  @media (max-width:760px){.stat-row{grid-template-columns:minmax(0,1fr);}}
+  @media (max-width:600px){.grid-4{grid-template-columns:minmax(0,1fr);}}
+  .grid-3>*,.grid-2>*,.grid-4>*,.steps>*,.stat-row>*,.roi>*,.about>*{min-width:0;}
+  .ph{max-width:100%;}
+  .timeline{grid-template-columns:minmax(0,1fr);}
+  .tl-step{grid-template-columns:96px minmax(0,1fr);}
+  @media (max-width:760px){.tl-step{grid-template-columns:56px minmax(0,1fr); gap:16px;}}
+  .tl-step>*{min-width:0;}
+
+  .step h3 .en,.en{font-family:var(--lat); font-style:italic; font-weight:600; color:var(--gold-deep); font-size:0.85em; white-space:nowrap;}
+  .section-sub{font-family:var(--serif); font-size:clamp(17px,2vw,20px); color:var(--gold-deep); margin-top:14px;}
+  .about-link{display:inline-block; margin-top:12px; font-size:13.5px; color:var(--gold-deep); text-decoration:none; border-bottom:1px solid var(--line);}
+  .about-book{display:grid; grid-template-columns:150px minmax(0,1fr); gap:26px; align-items:center; margin-top:8px;}
+  .about-book img{width:150px; height:auto;}
+  @media (max-width:600px){.about-book{grid-template-columns:minmax(0,1fr);} .about-book img{width:140px;}}
+  .report-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px;}
+  @media (max-width:1000px){.report-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media (max-width:560px){.report-grid{grid-template-columns:minmax(0,1fr);}}
+  .report-card{margin:0; background:var(--card); border:1px solid var(--line-soft); box-shadow:var(--shadow); display:flex; flex-direction:column;}
+  .report-card img{width:100%; height:220px; object-fit:cover; object-position:top; border-bottom:1px solid var(--line-soft);}
+  .report-card figcaption{padding:16px 18px 18px; font-size:13.5px; color:#4a5049; line-height:1.75;}
+  .report-card figcaption b{display:block; font-family:var(--serif); color:var(--ink); font-size:15.5px; margin-bottom:4px;}
+  .roi-note a{color:var(--gold); margin-left:6px;}
+  .en-block{display:block; font-size:15px; margin-top:4px;}
+  .about-book-noimg{display:block;}
+  .faq-list{margin:10px 0 0 0; padding:0 0 0 18px; list-style:disc;}
+  .faq-list li{font-size:14.5px; color:#4a5049; line-height:1.85; margin-bottom:6px;}
+  .book-btn{margin-top:18px;}
+
+  /* 手機版：表格左欄標題、點擊範圍、前後對比欄寬 */
+  @media (max-width:760px){
+    table.cmp.cmp-ai tbody th::before{content:"OAD 的角色"; display:block; font-family:var(--lat); font-style:italic; font-weight:600; color:var(--gold-deep); font-size:13px; letter-spacing:0.06em; margin-bottom:6px;}
+    .cite{padding:10px 0; margin-left:0; margin-top:4px;}
+    .about-link{padding:10px 0;}
+    .faq summary{min-height:52px; padding-top:14px; padding-bottom:14px;}
+    .roi-grid{grid-template-columns:minmax(0,1fr) auto auto; column-gap:0;}
+    .roi-grid span{padding-left:4px; padding-right:8px;}
+    .roi-b,.roi-a{white-space:nowrap; font-size:15px !important;}
+    .roi-table{padding:22px 18px 14px;}
+  }
+</style>
+<a class="skip-link" href="#main">跳至主要內容</a>
 <style id="mobile-typo">
 h1,h2,h3,h4,blockquote,summary{text-wrap:balance}
 p,li,td,th,figcaption,label,dd{text-wrap:pretty}
 .ph{display:inline-block}
 @media (max-width:640px){
-  body{font-size:15.5px; line-height:1.8}
-  .wrap{padding-left:18px; padding-right:18px}
-  .hero{padding:64px 0 56px}
-  .hero-badge{font-size:11.5px; letter-spacing:.3px; padding:6px 12px; gap:4px; flex-wrap:wrap; justify-content:center}
-  .hero h1{font-size:26px; line-height:1.45}
-  .hero p.lead{font-size:16px}
-  .hero-stats{gap:12px}
-  .stat-item{padding:16px 8px}
-  .stat-item h3{font-size:26px; white-space:nowrap}
-  .stat-item p{font-size:13px}
-  .section-head h2{font-size:23px; letter-spacing:0; line-height:1.45}
-  .section-head p{font-size:15px}
-  .card h3,.tab-desc h3{font-size:19px; line-height:1.45}
-  .coach-info h3{font-size:24px}
-  .compare-table{min-width:1040px; font-size:13.5px}
-  .compare-table th:first-child,.compare-table td:first-child{position:sticky; left:0; z-index:1; background:#12151b; min-width:88px}
-  .scroll-hint{display:block}
-  .compare-table th,.compare-table td{padding:12px 12px}
-  .sticky-cta{right:14px; bottom:14px}
-  .sticky-cta .btn{white-space:nowrap}
-  .btn{white-space:nowrap}
+  .hero h1{font-size:26px; line-height:1.5}
+  .section-head h2{font-size:22px; line-height:1.5}
+  .cta-final h2{font-size:22px}
+  h3{font-size:18px; line-height:1.5}
+  h4{font-size:17px; line-height:1.5}
+  .pullquote{font-size:18px !important; line-height:1.65}
 }
-.scroll-hint{display:none; text-align:center; font-size:12.5px; color:var(--text-muted); margin:0 0 10px}
-@media (max-width:900px){ .form-grid{grid-template-columns:minmax(0,1fr) !important} .form-group input,.form-group select,.form-group textarea{width:100%; min-width:0} }
-@media (max-width:640px){ .booking-box{padding:28px 20px !important} }
-.coach-highlights .highlight-item:last-child:nth-child(odd){grid-column:1/-1}
-
-
-/* 為什麼以行為科學出發 WHY BEHAVIOR */
-.why-quote{max-width:860px; margin:0 auto 44px; padding:26px 30px; border-left:3px solid var(--gold); background:rgba(212,175,55,0.06); border-radius:var(--radius); font-family:var(--serif); font-size:19px; line-height:1.8; color:var(--gold-light); text-align:center}
-.vs-box{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; margin-top:36px}
-.vs-col{border-radius:var(--radius); padding:30px 28px; border:1px solid var(--line-soft); background:var(--bg-card)}
-.vs-col.vs-oad{border-color:var(--line); background:linear-gradient(180deg, rgba(212,175,55,0.08), var(--bg-card))}
-.vs-badge{display:inline-block; font-size:11px; font-weight:700; padding:3px 10px; border-radius:4px; margin-bottom:12px; color:var(--text-muted); background:rgba(255,255,255,0.06)}
-.vs-oad .vs-badge{color:var(--gold); background:rgba(212,175,55,0.12)}
-.vs-col h4{font-size:19px; color:#fff; margin-bottom:14px}
-.vs-col ul{list-style:none; padding:0; margin:0}
-.vs-col li{font-size:14.5px; line-height:1.75; color:var(--text-body); padding:8px 0; border-top:1px dashed var(--line-soft)}
-.vs-trad li strong{color:var(--text-muted)}
-.vs-oad li strong{color:var(--gold-deep)}
-@media (max-width:900px){ .vs-box{grid-template-columns:minmax(0,1fr)} }
-@media (max-width:640px){ .why-quote{font-size:16.5px; padding:20px 18px} .vs-col{padding:24px 20px} }
-/* 一站式服務 JOURNEY */
-.journey-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px; counter-reset:step}
-.journey-step{padding:30px 24px}
-.journey-no{display:block; font-family:var(--lat); font-size:13px; letter-spacing:2px; color:var(--gold-dark); font-weight:700; margin-bottom:10px}
-.journey-step h3{font-size:19px; line-height:1.45}
-.journey-note{text-align:center; font-size:13px; color:var(--text-muted); margin:26px auto 0; max-width:820px; line-height:1.8}
-@media (max-width:1024px){ .journey-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
-@media (max-width:640px){ .journey-grid{grid-template-columns:minmax(0,1fr); gap:16px} .journey-step{padding:24px 20px} }
+@media (max-width:640px){
+  .tl-step h4,.suit-col h4{font-size:17px}
+  .layer h4,.sci-basic h4,.card h3{font-size:17px}
+  h3[style*="font-size:22px"]{font-size:19px !important}
+  ul li{font-size:14.5px}
+}
+@media (max-width:640px){
+  .tl-step h4{font-size:16px}
+  .contrast-col li{font-size:14px}
+  .contrast-col{padding-left:20px; padding-right:20px}
+}
 
 </style>
-</head>
-<body>
-<!-- 頂部導覽列 HEADER -->
-<header class="site-nav">
-<div class="wrap nav-inner">
-<div class="brand">
-<img alt="OAD Logo" class="brand-logo-img" src="oad-logo.png"/>
-<span class="brand-tag">行為科學驅動的動態人財管理系統</span>
-</div>
-<nav aria-label="全站導覽">
-<ul class="nav-links">
-<li><a href="#hero">首頁</a></li>
-<li><a href="#dashboard"><span class="phw"><span class="ph">如何動態管理</span></span></a></li>
-<li><a href="#audiences"><span class="phw"><span class="ph">應用場景</span></span></a></li>
-<li><a href="#comparison"><span class="phw"><span class="ph">工具比較</span></span></a></li>
-<li><a href="#journey"><span class="phw"><span class="ph">一站式服務</span></span></a></li>
-<li><a href="#coach"><span class="phw"><span class="ph">輔導顧問</span></span></a></li>
-</ul>
+<header class="nav" id="siteNav">
+<div class="nav-inner">
+<button aria-controls="navLinks" aria-expanded="false" aria-label="開啟選單" class="nav-toggle" id="navToggle"><span></span></button>
+<nav class="nav-links" id="navLinks">
+<a href="#pain">企業主的卡關點</a>
+<a href="#solution">解法</a>
+<a href="#about">關於 Ginger</a>
+<a href="#why-oad">為什麼是 OAD</a>
+<a href="#cost">錯聘的代價</a>
+<a href="#faq">常見問題</a>
+<a aria-label="預約對談" class="btn btn-gold nav-cta" href="#book">預約對談</a>
 </nav>
-<div>
-<a class="btn btn-gold" href="#booking" style="padding: 9px 20px; font-size: 14px;"><span class="phw"><span class="ph">免費體驗</span></span></a>
-</div>
 </div>
 </header>
-<!-- HERO 旗艦首頁區塊 -->
-<section class="hero" id="hero">
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top" style="--hero-lines:url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22560%22 height=%22560%22&gt;&lt;g fill=%22none%22 stroke=%22%23C6A15B%22 stroke-width=%221%22 opacity=%220.6%22&gt;&lt;circle cx=%22280%22 cy=%22280%22 r=%22240%22/&gt;&lt;circle cx=%22280%22 cy=%22280%22 r=%22170%22/&gt;&lt;circle cx=%22280%22 cy=%22280%22 r=%22100%22/&gt;&lt;path d=%22M40 280 L520 280%22/&gt;&lt;path d=%22M280 40 L280 520%22/&gt;&lt;/g&gt;&lt;/svg&gt;');">
+<div class="wrap hero-inner">
+<p class="eyebrow">Ginger Lin｜頂尖業務複製顧問</p>
+<h1>業績，<span class="ph">不該只靠一兩個人撐。</span></h1>
+<p class="hero-slogan">七分鐘看出頂尖業務的特質，搭配一站式業績提升方案，<span class="ph">把您的明星球員，</span><span class="ph">複製成明星球隊。</span></p>
+<p class="lead">用行為科學看懂誰適合賣、誰適合帶，再把頂尖業務的成交心法，變成團隊都學得會的能力。</p>
+<div class="hero-cards">
+<div class="hero-card"><span class="n">01</span>誰適合賣？</div>
+<div class="hero-card"><span class="n">02</span>誰適合帶？</div>
+<div class="hero-card"><span class="n">03</span>怎麼讓整個團隊都會賣？</div>
+</div>
+<div class="hero-actions">
+<a class="btn btn-gold" href="#cost">算算看錯聘的代價</a>
+<a class="btn btn-outline" href="#book">預約線上對談</a>
+</div>
+<p class="hero-trust">先釐清問題，再決定是否需要評測。現在申請，可獲免費頂尖業務報告診斷乙次。</p>
+</div>
+</section>
+
+<!-- 老闆的卡關點 -->
+<section class="section" id="pain">
 <div class="wrap">
-<div class="hero-badge"><span class="phw">
-        <span class="ph">✦ 源自 38 年行為科學</span> <span class="ph">｜ 1,000 萬次實證數據 ✦</span>
-      </span></div>
-<h1><span class="phw"><span class="ph">找到最強團隊成員的底層密碼</span></span><br/><span class="phw"><span class="ph">把一個人的卓越，</span><span class="ph">變成整支團隊能複製的標準</span></span></h1>
-<p class="lead"><span class="phw">
-        單次評測無法因應高速市場變化。只需 7 分鐘，為企業找出「打單戰將」與「教練主管」的 TOP1業務績效者行為模式，再由 Ginger 一站式陪跑落地，預防晉升不適任主管，實現團隊<span class="ph">複利成長。</span>
-      </span></p>
-<div class="hero-cta">
-<a class="btn btn-gold" href="#booking"><span class="phw"><span class="ph">預約 1 次免費</span><span class="ph"> TOP1業務績效者解讀</span></span></a>
-<a class="btn btn-outline" href="#dashboard"><span class="phw"><span class="ph">了解如何動態管理</span></span></a>
+<div class="section-head">
+<span class="eyebrow">老闆的卡關點</span>
+<h2>這些情況，<span class="ph">是不是很熟悉？</span></h2>
 </div>
-<div class="hero-stats">
-<div class="stat-item">
-<h3><span class="phw"><span class="ph">38 年</span></span></h3>
-<p><span class="phw">全球數<span class="ph">據驗證歷史</span></span></p>
+<div class="grid-3">
+<div class="card quote-card"><span class="n">01</span><h3>「業績都靠那一兩個人，他一請假，整個月就難看。」</h3><p>業績集中在少數人身上，等於把公司的營收，押在他們的去留上。</p></div>
+<div class="card quote-card"><span class="n">02</span><h3>「我是公司最會賣的人，其他人都在等我下指令。」</h3><p>老闆一個人扛成交，團隊習慣等答案。老闆越忙，團隊越不會自己判斷。</p></div>
+<div class="card quote-card"><span class="n">03</span><h3>「把業績最好的人升主管，結果團隊業績反而掉了。」</h3><p>他忙著自己搶單、對下屬沒耐心。公司同時失去一位頂尖業務，換來一位辛苦的主管。</p></div>
+<div class="card quote-card"><span class="n">04</span><h3>「面試時很會講，進來三個月卻做不出業績。」</h3><p>履歷證明他做過什麼，面試看到他怎麼表達，卻看不到他在壓力和拒絕下會怎麼做。</p></div>
+<div class="card quote-card"><span class="n">05</span><h3>「送去上課回來很感動，兩週後一切照舊。」</h3><p>課程教的是技巧，回到現場沒有人帶、心態也沒改變，行為很快就回到原點。</p></div>
+<div class="card quote-card"><span class="n">06</span><h3>「主管知道每個人個性不同，卻不知道一對一要說什麼。」</h3><p>測評報告做了、也看了，主管真正需要的是：明天見到他，第一句話怎麼開口。</p></div>
 </div>
-<div class="stat-item">
-<h3><span class="phw"><span class="ph">1,000 萬+</span></span></h3>
-<p><span class="phw">跨國企<span class="ph">業實戰樣本</span></span></p>
+<p class="hr-note"><strong>給 HR：</strong>測評做了，報告卻躺在抽屜裡？問題通常不在工具，而在沒有人把它用到現場。</p>
+<p class="pullquote">問題通常不在業務不夠努力，<br/>而在「人、位置與方法」沒有對齊。</p>
 </div>
-<div class="stat-item">
-<h3><span class="phw"><span class="ph">0 起敗訴</span></span></h3>
-<p><span class="phw">EEOC / APA 最<span class="ph">高合規紀錄</span></span></p>
+</section>
+
+<!-- 人和四要素 -->
+<section class="section" id="harmony" style="background:#FBF9F5;">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">業務成長的關鍵</span>
+<h2>天時地利，老闆控制不了；<br/><span class="ph">人和，是唯一能經營的。</span></h2>
 </div>
-<div class="stat-item">
-<h3><span class="phw"><span class="ph">7 分鐘</span></span></h3>
-<p><span class="phw">極簡精<span class="ph">準動態萃取</span></span></p>
-</div>
+<p class="section-lead">業務要成長，天時、地利、人和缺一不可。景氣和市場，老闆控制不了；唯一能經營的，是人和。而人和，來自四件事：</p>
+<div class="grid-4">
+<div class="card"><span class="n">01</span><h3>選對人</h3><p>對的人，放在對的位置。</p></div>
+<div class="card"><span class="n">02</span><h3>帶對人</h3><p>主管知道每個人該怎麼帶，而且出發點是幫他成功。</p></div>
+<div class="card"><span class="n">03</span><h3>傳得下去</h3><p>頂尖業務願意教，團隊學得會。</p></div>
+<div class="card"><span class="n">04</span><h3>價值認同</h3><p>業務相信自己的角色，也相信產品真的能幫到客戶，自然願意主動開口成交。</p></div>
 </div>
 </div>
 </section>
-<!-- 3 大業務核心痛點與解方 AUDIENCES -->
-<section class="section" id="audiences">
+
+<!-- 一般企業的解法與盲點 -->
+<section class="section" id="research">
 <div class="wrap">
 <div class="section-head">
-<span class="eyebrow">STRATEGIC SCENARIOS</span>
-<h2><span class="phw"><span class="ph">超級銷售與業務教練，</span><span class="ph">是兩種完全不同的</span><span class="ph">「行為驅動模式」</span></span></h2>
-<p><span class="phw"><span class="ph">傳統選才常陷入</span><span class="ph">「誰業績好就升誰」的直覺陷阱，</span><span class="phw">OAD 動態系統協助企業精準識別並複製<span class="ph"> TOP1業務績效者。</span></span></span></p>
+<span class="eyebrow">一般企業的解法與盲點</span>
+<h2>大部分企業都試過這些方法。<br/><span class="ph">問題不在不夠努力，而在方向。</span></h2>
 </div>
-<div class="audiences-grid">
-<div class="card">
-<span class="card-tag">招募與篩選複製</span>
-<h3><span class="phw"><span class="ph">找出「TOP1業務績效者」</span></span></h3>
-<p><span class="phw">對外精準招募與篩選複製超級銷售（Top Closer）。不再靠運氣猜測面試者，而是精準對齊頂尖業務的關鍵行為驅動特質，顯著拉高大單成交<span class="ph">率與產能。</span></span></p>
-<div class="card-solution"><span class="phw"><span class="ph">✓ 降低試錯成本，</span><span class="ph">將頂尖戰力規格化標準複製</span></span></div>
-</div>
-<div class="card">
-<span class="card-tag">升遷防錯與賦能</span>
-<h3><span class="phw"><span class="ph">預防晉升不適任的主管</span></span></h3>
-<p><span class="phw">在考慮升遷關鍵人才時，看他是適合「繼續當頂級獨立戰將領高額佣金」，還是真的具有「賦能他人、耐心教練」的管理特質。避免失去一位超級業務，卻換來一位痛<span class="ph">苦的主管。</span></span></p>
-<div class="card-solution"><span class="phw"><span class="ph">✓ 找出</span><span class="ph">「TOP1主管績效者」，</span><span class="ph">保障管理體系穩定運轉</span></span></div>
-</div>
-<div class="card">
-<span class="card-tag">動態追蹤與預警</span>
-<h3><span class="phw"><span class="ph">環境會變，</span><span class="ph">人更會變</span></span></h3>
-<p><span class="phw">單次的心理測評只能記錄受測當下的靜態瞬間。面對業績壓力、組織調整與市場震盪，OAD 提供季度動態追蹤，提前 3 個月預警行為模式變化與<span class="ph">倦怠風險。</span></span></p>
-<div class="card-solution"><span class="phw"><span class="ph">✓ 季度動態追蹤機制，</span><span class="ph">輔助管理層主動決策</span></span></div>
-</div>
-</div>
-</div>
-</section>
-<!-- 為什麼以行為科學出發 WHY BEHAVIOR -->
-<section class="section" id="why-behavior" style="border-top: 1px solid var(--line-soft);">
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">THE SCIENCE OF BEHAVIOR</span>
-<h2><span class="phw"><span class="ph">為什麼以「行為科學」出發？</span></span><br/><span class="phw"><span class="ph">不是性格測驗，</span><span class="ph">而是「工作行為驅動力」</span></span></h2>
-<p><span class="phw"><span class="ph">市面上的測驗告訴你「這個人是什麼個性」，</span><span class="ph">OAD 看的是「他在工作壓力下會怎麼行動與決策」。</span><span class="ph">看懂行為，</span><span class="ph">才能把一個人的卓越變成團隊的常態。</span></span></p>
-</div>
-<div class="why-quote"><span class="phw">「企業付薪水，買的不是員工的『性格』，而是他在壓力下做出的『決策與行為』。性格難以改變，但行為可以被對照、診斷與<span class="ph">複製。」</span></span></div>
-<div class="audiences-grid">
-<div class="card">
-<span class="card-tag">核心邏輯 ① ｜ 本質差異</span>
-<h3><span class="phw"><span class="ph">性格是「黑盒子」，</span><span class="ph">行為才是「儀表板」</span></span></h3>
-<p><span class="phw">性格不等於業績。內向沉穩的人，可能靠傾聽拿下大單；看似熱情善談的人，卻可能在關鍵談判時收不了單。只談性格，員工也容易說「我天生就是這種個性」；看行為，談的是在特定目標與壓力下，他實際會怎麼<span class="ph">做。</span></span></p>
-<div class="card-solution"><span class="phw"><span class="ph">✓ 性格給的是標籤，</span><span class="ph">行為給的是可衡量、可改善的指標</span></span></div>
-</div>
-<div class="card">
-<span class="card-tag">核心邏輯 ② ｜ 決策除錯</span>
-<h3><span class="phw"><span class="ph">避開憑直覺面試的</span><span class="ph">兩大盲點</span></span></h3>
-<p><span class="phw"><strong>光環效應：</strong>45 分鐘的面試，容易把「口條與社交魅力」誤當成「能打硬仗、抗壓成交」的真實能力。<br/><strong>倖存者偏差：</strong>主管習慣用「我當年怎麼拚過來」要求部屬，忽略每位頂尖同仁的驅動方式其實不<span class="ph">一樣。</span></span></p>
-<div class="card-solution"><span class="phw"><span class="ph">✓ 用客觀的行為數據，</span><span class="ph">取代主管的主觀眼緣</span></span></div>
-</div>
-<div class="card">
-<span class="card-tag">核心邏輯 ③ ｜ 防偽機制</span>
-<h3><span class="phw"><span class="ph">自由選詞，</span><span class="ph">不給「標準答案」</span></span></h3>
-<p><span class="phw">一般情境問卷（例如「遇到挫折時你會堅持到底嗎？」）很容易讓求職者挑「面試官想聽的答案」。OAD 採用自由選詞方式，受測者只需勾選最符合自己的詞彙，沒有標準答案，也很難猜題<span class="ph">修飾。</span></span></p>
-<div class="card-solution"><span class="phw"><span class="ph">✓ 不測包裝過的人設，</span><span class="ph">看真實的工作反應</span></span></div>
-</div>
-</div>
-<div class="vs-box">
-<div class="vs-col vs-trad">
-<span class="vs-badge">傳統性格測驗 / 面試</span>
-<h4>貼標籤模式</h4>
-<ul>
-<li><strong>✕ 焦點：</strong>問「你是什麼個性？」，給出固定的性格分類</li>
-<li><strong>✕ 作答：</strong>題意明顯，容易挑「面試官想聽的答案」</li>
-<li><strong>✕ 追蹤：</strong>一次性結果，看不出團隊在壓力下的變化</li>
-<li><strong>✕ 落地：</strong>員工拿分類當藉口，主管仍不知道週一該怎麼談</li>
-</ul>
-</div>
-<div class="vs-col vs-oad">
-<span class="vs-badge">OAD 行為科學</span>
-<h4>戰力儀表板模式</h4>
-<ul>
-<li><strong>✓ 焦點：</strong>看「你在工作壓力下的驅動方式」，對照實際工作表現</li>
-<li><strong>✓ 作答：</strong>7 分鐘自由選詞，沒有標準答案</li>
-<li><strong>✓ 追蹤：</strong>季度動態追蹤，在業績下滑前提早預警</li>
-<li><strong>✓ 落地：</strong>找出 TOP1業務績效者的行為模式，讓卓越能被整支團隊複製</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- 後台儀表板：如何動態管理 DASHBOARD -->
-<section class="section" id="dashboard" style="background: rgba(18, 22, 32, 0.5);">
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">DYNAMIC MANAGEMENT</span>
-<h2><span class="phw"><span class="ph">如何動態管理：</span><span class="ph">將人性轉化為可視化的戰力儀表板</span></span></h2>
-<p><span class="phw"><span class="ph">傳統測評報告往往束之高閣，</span><span class="ph">OAD 透過動態雲端系統，</span><span class="ph">即時生成 1:1 實戰輔導錦囊。</span></span></p>
-</div>
-<div class="dashboard-preview">
-<div class="dashboard-tabs">
-<button class="tab-btn active" onclick="switchTab(0)">1. TOP1業務績效者建模（Job Profiling）</button>
-<button class="tab-btn" onclick="switchTab(1)">2. 行為偏離預警（Gap Analysis）</button>
-<button class="tab-btn" onclick="switchTab(2)">3. 主管 1:1 輔導錦囊（Next-Best Action）</button>
-</div>
-<div class="tab-content">
-<div class="tab-pane active" id="pane-0" style="grid-template-columns:1fr;">
-<div class="tab-desc">
-<h3><span class="phw"><span class="ph">只需 7 分鐘，</span><span class="ph">定義崗位頂尖勝任基準</span></span></h3>
-<p><span class="phw">由優秀績效者共同填寫，OAD 演算法自動萃取該崗位在大單談判、客戶經營、抗壓驅動力上的「黃金行為幾何形狀」，消除用人主管的<span class="ph">個人偏見。</span></span></p>
-<ul class="tab-points">
-<li><span class="phw">客觀萃取團隊最高產能者的共<span class="ph">同行為特徵</span></span></li>
-<li><span class="phw">提供面試選才與升遷提拔的絕<span class="ph">對客觀依據</span></span></li>
-<li><span class="phw">支援依據市場策略動態微調<span class="ph">崗位期望值</span></span></li>
-</ul>
-</div>
-</div>
-<div class="tab-pane" id="pane-1">
-<div class="tab-desc">
-<h3><span class="phw"><span class="ph">環境變、</span><span class="ph">壓力變，</span><span class="ph">提前預警行為偏離</span></span></h3>
-<p><span class="phw">人不是機器，在面對季末業績壓力、團隊重組或個人生活事件時，行為風格會顯著位移。系統每季動態比對，在業績下滑前 30-90 天<span class="ph">提出預警。</span></span></p>
-<ul class="tab-points">
-<li><span class="phw">提前識別銷售人員的隱形倦怠<span class="ph">與能量耗竭</span></span></li>
-<li><span class="phw">監測主管是否因過度施壓造成團<span class="ph">隊信任斷裂</span></span></li>
-<li><span class="phw">協助 HR 在人員離職前掌握關<span class="ph">鍵溝通時機</span></span></li>
-</ul>
-</div>
-<div class="mock-visual">
-<div style="color:#ff3b30; font-weight:bold; margin-bottom:12px;">// QUARTERLY DRIFT WARNING</div>
-<div style="color:#A0AEC0;">[當前季度對比] 基準差: +2.4σ (偏離安全區間)</div>
-<div style="color:#A0AEC0;"><span class="phw"><span class="ph">[潛在風險提示] 決策步調驟降，</span><span class="ph">溝通能量轉向防禦</span></span></div>
-<div style="color:#F1D487; margin-top:14px;"><span class="phw"><span class="ph">⚡ 系統建議：</span><span class="ph">排程 1:1 深入訪談，</span><span class="ph">釋放成交壓力</span></span></div>
-</div>
-</div>
-<div class="tab-pane" id="pane-2">
-<div class="tab-desc">
-<h3><span class="phw"><span class="phw">主管 1:1 實戰輔導錦囊（Next-Best <span class="ph">Action）</span></span></span></h3>
-<p><span class="phw">讓每位管理者都擁有私人高階顧問的智慧。系統根據團隊成員與主管之間的行為落差，自動產生具體對話指南、激勵關鍵字與溝通<span class="ph">地雷禁忌。</span></span></p>
-<ul class="tab-points">
-<li><span class="phw"><span class="ph">告訴主管</span><span class="ph">「該怎麼說」與</span><span class="ph">「絕對不能說」的關鍵字</span></span></li>
-<li><span class="phw">針對不同成員提供客製化的授權<span class="ph">與檢核頻率</span></span></li>
-<li><span class="phw">將管理者從消防員轉變為高產能<span class="ph">的業務教練</span></span></li>
-</ul>
-</div>
-<div class="mock-visual">
-<div style="color:var(--gold); font-weight:bold; margin-bottom:12px;">// COACHING PLAYBOOK</div>
-<div style="color:#A0AEC0;"><span class="phw"><span class="ph">[激勵方針] 強調自主權與大局掌控，</span><span class="ph">減少微觀干涉</span></span></div>
-<div style="color:#A0AEC0;"><span class="phw"><span class="ph">[溝通話術建議]</span> <span class="ph">「這筆大單依照你的判斷，</span><span class="ph">關鍵突破點在哪？」</span></span></div>
-<div style="color:#ff6b64; margin-top:14px;"><span class="phw"><span class="ph">⛔ 禁忌：</span><span class="ph">勿在公開會議細查其每日行程表</span></span></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 工具比較表 COMPARISON -->
-<section class="section" id="comparison">
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">COMPETITIVE MATRIX</span>
-<h2><span class="phw"><span class="ph">主流管理工具比較：</span><span class="ph">為企業選擇最精準的解方</span></span></h2>
-<p><span class="phw"><span class="ph">每種工具均有其研發背景與定位，</span><span class="ph">從企業實戰與管理落地的視角全面解析：</span></span></p>
-</div>
-<p class="scroll-hint"><span class="phw">← 左右滑動查看完<span class="ph">整比較 →</span></span></p>
-<div class="compare-table-wrap">
-<table class="compare-table">
-<thead>
-<tr>
-<th style="width: 18%;">評估維度</th>
-<th class="col-oad" style="width: 28%;"><span class="phw">OAD.ai 動態人<span class="ph">財管理系統</span></span></th>
-<th style="width: 18%;"><span class="phw">Hogan <span class="ph">霍根測評</span></span></th>
-<th style="width: 18%;"><span class="phw">DISC <span class="ph">行為風格</span></span></th>
-<th style="width: 18%;"><span class="phw">MBTI <span class="ph">性格類型</span></span></th>
-</tr>
-</thead>
+<div class="cmp-wrap">
+<table class="cmp cmp-research">
+<thead><tr><th>一般企業的做法</th><th>盲點</th><th>第三方怎麼說</th></tr></thead>
 <tbody>
-<tr>
-<td><strong><span class="phw"><span class="ph">主要設計目的</span></span></strong></td>
-<td class="col-oad"><strong><span class="phw"><span class="ph">TOP1業務績效者複製、</span><span class="ph">升遷防錯、</span><span class="ph">動態預警</span></span></strong></td>
-<td><span class="phw">高階領導者潛在盲點與暗<span class="ph">黑特質分析</span></span></td>
-<td><span class="phw">人際溝通風格識別與工作<span class="ph">坊互動體驗</span></span></td>
-<td><span class="phw">個人自我認知與團隊性<span class="ph">格偏好探索</span></span></td>
-</tr>
-<tr>
-<td><strong><span class="phw"><span class="ph">受測時間與體驗</span></span></strong></td>
-<td class="col-oad"><strong><span class="phw"><span class="ph">7 分鐘極簡填寫，</span><span class="ph">受測者不易猜題偽裝</span></span></strong></td>
-<td><span class="phw"><span class="ph">約 30-45 分鐘，</span><span class="ph">題目多且需高度專注</span></span></td>
-<td><span class="phw"><span class="ph">約 10-15 分鐘，</span><span class="ph">易受當下情境影響</span></span></td>
-<td><span class="phw"><span class="ph">約 15-20 分鐘，</span><span class="ph">題意認知常因人而異</span></span></td>
-</tr>
-<tr>
-<td><strong><span class="phw"><span class="ph">追蹤應用模式</span></span></strong></td>
-<td class="col-oad"><strong><span class="phw"><span class="ph">支援季度動態追蹤，</span><span class="ph">提前預警行為變化</span></span></strong></td>
-<td><span class="phw">適合年度關鍵決策或升遷時進<span class="ph">行單點複測</span></span></td>
-<td><span class="phw">適合年度或專案週<span class="ph">期單點檢視</span></span></td>
-<td><span class="phw">適合單次教育訓練或<span class="ph">工作坊使用</span></span></td>
-</tr>
-<tr>
-<td><strong><span class="phw"><span class="ph">落地輔導機制</span></span></strong></td>
-<td class="col-oad"><strong><span class="phw"><span class="ph">附 1 次免費</span><span class="ph"> TOP1業務績效者解讀，</span><span class="ph">並支援季度動態追蹤</span></span><br/><span style="font-size:12px; color:var(--gold-deep); font-weight:normal;"><span class="phw"><span class="ph">（另可加購 Ginger 落地輔導，</span><span class="ph">詳見下方一站式服務）</span></span></span></strong></td>
-<td><span class="phw">需委託具原廠認證之心理學顧問協助<span class="ph">解讀與輔導</span></span></td>
-<td><span class="phw"><span class="ph">多數以軟體自主訂閱為主，</span><span class="ph">企業需自行培育內訓師</span></span></td>
-<td><span class="phw"><span class="ph">坊間企管講師多有教授，</span><span class="ph">輔導資源普及但水準不一</span></span></td>
-</tr>
-<tr>
-<td><strong><span class="phw"><span class="ph">法律合規紀錄</span></span></strong></td>
-<td class="col-oad"><strong><span class="phw">38 年 0 起敗訴（EEOC/BPS <span class="ph">權威認證）</span></span></strong></td>
-<td><span class="phw">具備國際法規合規性與嚴<span class="ph">謹學術驗證</span></span></td>
-<td><span class="phw">具備基本<span class="ph">法規合規性</span></span></td>
-<td><span class="phw">需留意不同國家之就<span class="ph">業適配爭議</span></span></td>
-</tr>
+<tr><th scope="row">把業績最好的業務升主管</th><td data-label="盲點">會銷售不等於會帶人</td><td data-label="第三方怎麼說">一份分析 214 家企業、超過 1,500 位升任主管業務的研究發現：個人業績越好越容易被升官，但他帶的部屬業績反而下滑；升任前業績每多一倍，部屬業績平均下降約 7.5%。<a class="cite" href="https://www.nber.org/digest/may18/peter-principle-isnt-just-real-its-costly" rel="noopener" target="_blank">Benson, Li &amp; Shue｜NBER ↗</a></td></tr>
+<tr><th scope="row">靠資歷和過去績效選主管</th><td data-label="盲點">看不到帶人的天賦</td><td data-label="第三方怎麼說">Gallup 指出，企業選錯主管人選的比例高達 82%；大約每 10 人只有 1 人具備高度帶人天賦。<a class="cite" href="https://www.gallup.com/workplace/231593/why-great-managers-are-so-rare.aspx" rel="noopener" target="_blank">Gallup ↗</a></td></tr>
+<tr><th scope="row">靠履歷和面試挑人</th><td data-label="盲點">看不到他在工作裡會怎麼做</td><td data-label="第三方怎麼說">整合數十年選才研究的分析發現：跟工作直接相關的工具預測力最高；評量若以「在工作中」的情境作答，預測力也明顯較高。<a class="cite" href="https://www.siop.org/tip-article/is-cognitive-ability-the-best-predictor-of-job-performance" rel="noopener" target="_blank">Sackett 等人 2022｜SIOP ↗</a></td></tr>
+<tr><th scope="row">送去上銷售課</th><td data-label="盲點">回到現場沒人帶，很快回到原點</td><td data-label="第三方怎麼說">訓練轉移研究一再指出：課程能不能用在工作上，很大程度取決於回到職場後的環境，尤其是主管和同事的支持。<a class="cite" href="https://en.wikipedia.org/wiki/Transfer_of_training" rel="noopener" target="_blank">Baldwin &amp; Ford 模型 ↗</a></td></tr>
+<tr><th scope="row">加獎金、壓 KPI</th><td data-label="盲點">短期拉高業績，長期推高流動率</td><td data-label="第三方怎麼說">Gallup：替換一位員工的成本，約為他年薪的 0.5～2 倍；自願離職者中有 52% 認為，公司原本可以做些什麼讓他留下。<a class="cite" href="https://www.gallup.com/workplace/247391/fixable-problem-costs-businesses-trillion.aspx" rel="noopener" target="_blank">Gallup ↗</a></td></tr>
+<tr><th scope="row">請頂尖業務上台分享</th><td data-label="盲點">他自己也說不清楚做對了什麼</td><td data-label="第三方怎麼說">哲學家 Polanyi 提出「隱性知識」：人知道的，比說得出來的多。</td></tr>
+<tr><th scope="row">用 ChatGPT 等 AI 問「這個人該怎麼帶」</th><td data-label="盲點">AI 只知道您告訴它的，不認識這位成員</td><td data-label="第三方怎麼說">一份檢視五款主流 AI 助理的研究發現，AI 普遍會順著使用者表達的看法回答；主管若先入為主，AI 往往也跟著附和。彭博社以 GPT 對履歷排序測試數千次，也發現結果會因姓名暗示的族裔而出現偏差。再加上一般 AI 沒有這位成員的行為數據，給的多半是通用建議。<a class="cite" href="https://arxiv.org/abs/2310.13548" rel="noopener" target="_blank">Sharma 等人 2023｜arXiv ↗</a><a class="cite" href="https://www.bloomberg.com/graphics/2024-openai-gpt-hiring-racial-discrimination/" rel="noopener" target="_blank">Bloomberg 2024 ↗</a></td></tr>
 </tbody>
 </table>
 </div>
 </div>
 </section>
-<!-- 一站式服務 JOURNEY -->
-<section class="section" id="journey">
+
+<!-- 解法 -->
+<section class="section" id="solution" style="background:#FBF9F5;">
 <div class="wrap">
 <div class="section-head">
-<span class="eyebrow">ONE-STOP SERVICE</span>
-<h2><span class="phw"><span class="ph">從測評到成交，</span><span class="ph">一站式陪跑到底</span></span></h2>
-<p><span class="phw"><span class="ph">測評只是起點。</span><span class="ph">從找出 TOP1業務績效者、拆解做法，</span><span class="ph">到業務真的成交、主管持續追蹤，</span><span class="ph">一條路線完整串起。</span></span></p>
+<span class="eyebrow">解法</span>
+<h2>把明星球員，<span class="ph">複製成明星球隊。</span></h2>
 </div>
-<div class="journey-grid">
-<div class="card journey-step">
-<span class="journey-no">STEP 01</span>
-<span class="card-tag">OAD 原廠測評</span>
-<h3><span class="phw"><span class="ph">7 分鐘找出</span><span class="ph">TOP1業務績效者</span></span></h3>
-<p><span class="phw">為「打單戰將」與「教練主管」找出 TOP1業務績效者的行為模式，並附 1 次免費解讀，看清誰適合衝業績、誰適合帶<span class="ph">團隊。</span></span></p>
+<p class="section-lead">三個步驟，把一個人的業績，變成整個團隊的業績。</p>
+<div class="steps">
+<div class="step"><span class="step-kicker">Step 1｜選對人</span><h3>OAD 行為科學</h3><p>約七分鐘的評測，看出「頂尖業務的樣子」和「好主管的樣子」。招募時比對應徵者，升遷前比對候選人，不再只靠面試和過去的業績猜。</p></div>
+<div class="step"><span class="step-kicker">Step 2｜帶對人</span><h3>OAD AI 帶人教練</h3><p>主管描述成員的狀況，透過 OAD 的 AI 帶人教練，結合他的評測報告，給出一對一可以怎麼談、怎麼指導。Ginger 結合貴公司的溝通風格與文化，協助主管把這些建議說出口、引導成員優化。</p></div>
+<div class="step"><span class="step-kicker">Step 3｜傳得下去</span><h3>Ginger 的 NLP 複製卓越策略<span class="en en-block">Modeling Excellence</span></h3><p>找出頂尖業務的成交心法，讓整個團隊都學得會。頂尖業務的祕訣，往往不在話術，也不在於肉眼觀察拆解出的步驟，而在他怎麼看客戶、怎麼判斷時機、心裡相信什麼。複製卓越策略透過觀察與深度提問，把這些連他自己都說不清楚的心法找出來，變成團隊能練、能學的能力。</p><p>再加上「從屬層級（Logical Levels）」，重建「我是誰」的自我身分認同，讓每個人從「我有可能做到嗎？」轉成「我要怎麼做到？」，從而改變心態、行為與結果。</p></div>
 </div>
-<div class="card journey-step">
-<span class="journey-no">STEP 02</span>
-<span class="card-tag">Ginger 落地輔導・加值服務</span>
-<h3><span class="phw"><span class="ph">把頂尖業務的做法，</span><span class="ph">拆成團隊能學的步驟</span></span></h3>
-<p><span class="phw">運用 NLP「卓越模仿（Modeling）」拆解 TOP1業務績效者怎麼想、怎麼做；再用「從屬層級」由環境、行為、能力、信念到身分逐層對焦，讓改變不只停在<span class="ph">技巧。</span></span></p>
+<div class="callout human">
+<strong>人性提問：頂尖業務會不會留一手？</strong>
+<p>很多頂尖業務不是不教，而是說不出來。複製卓越不是要他交出祕訣，而是陪他一起，把自己的成交心法整理出來。搭配帶有回報的制度設計，他從「怕被取代的人」，變成「團隊都在學的那個人」。</p>
 </div>
-<div class="card journey-step">
-<span class="journey-no">STEP 03</span>
-<span class="card-tag">加購輔導即贈</span>
-<h3><span class="phw"><span class="ph">高單價成交</span><span class="ph">線上課程</span></span></h3>
-<p><span class="phw">業務團隊可隨時回看的線上課程，把高單價成交的關鍵心法與話術練成日常習慣，讓輔導成果在現場持續<span class="ph">發酵。</span></span></p>
-</div>
-<div class="card journey-step">
-<span class="journey-no">STEP 04</span>
-<span class="card-tag">OAD 動態追蹤</span>
-<h3><span class="phw"><span class="ph">季度追蹤，</span><span class="ph">提前預警</span></span></h3>
-<p><span class="phw">透過 OAD 季度動態追蹤掌握人才行為變化，搭配主管 1:1 輔導錦囊，讓團隊在壓力與市場變動下持續對準<span class="ph"> TOP1業務績效者。</span></span></p>
-</div>
-</div>
-<p class="journey-note"><span class="phw"><span class="ph">※ STEP 01 與 STEP 04 為 OAD 原廠服務；</span><span class="ph">STEP 02 與 STEP 03 為 Ginger 提供之獨立加值服務，</span><span class="ph">非 OAD 原廠產品。</span></span></p>
-<div style="text-align:center; margin-top:28px;">
-<a class="btn btn-gold" href="#booking" style="white-space:normal; max-width:100%;"><span class="phw"><span class="ph">預約免費 TOP1業務績效者解讀，</span><span class="ph">從 STEP 01 開始</span></span></a>
+<div class="grid-3 readers">
+<div class="reader"><span class="who">企業主</span><p>業績不再押在一兩個人身上，團隊績效整體提升。</p></div>
+<div class="reader"><span class="who">頂尖業務</span><p>你的成交力，升級為公司珍惜的資產。</p></div>
+<div class="reader"><span class="who">HR</span><p>和用人主管有了共同的語言與數據，也為 ESG 的人力資本揭露提供依據：S（社會）面的員工留任與培育成效，G（治理）面的關鍵人才與主管接班規劃。金管會持續強化上市櫃公司的永續揭露，人才決策有數據可佐證，已是趨勢。</p></div>
 </div>
 </div>
 </section>
-<!-- 專家顧問 COACH -->
-<section class="section" id="coach" style="background: rgba(18, 22, 32, 0.5);">
+
+<!-- WHY OAD -->
+<section class="section" id="why-oad">
 <div class="wrap">
 <div class="section-head">
-<span class="eyebrow">EXPERT CONSULTANT</span>
-<h2><span class="phw"><span class="ph">輔導顧問：</span><span class="ph">林逸蓁 Ginger Lin</span></span></h2>
-<p><span class="phw"><span class="ph">不只提供軟體，</span>更由具備 20 年高階實戰歷練的顧問親自帶領，<span class="ph">確保工具真正轉化為營收成果。</span></span></p>
+<span class="eyebrow">Why OAD</span>
+<h2>為什麼是 OAD？</h2>
 </div>
-<div class="coach-card">
-<div class="coach-photo-wrap">
-<img alt="Ginger Lin 林逸蓁" class="coach-photo" src="ginger.jpg"/>
+<p class="section-lead">OAD 在歐美累積 38 年數據、超過 1,000 萬次評測，專為業務團隊設計：從挑人、升主管，到主管怎麼帶人，都有行為數據可以依循。</p>
+<div class="grid-3">
+<div class="card"><h3>以頂尖業務為標準</h3><p>請公司最頂尖的業務做一次約七分鐘的評測，他的輪廓就成為之後每位應徵者的比對標準。</p></div>
+<div class="card"><h3>看出誰適合升主管</h3><p>避免把最會成交的人，放進不適合他的管理角色，同時失去一位頂尖業務、換來一位辛苦的主管。</p></div>
+<div class="card"><h3>不只看「他是誰」</h3><p>同時看他自然的樣子，以及他認為工作要求他的樣子。兩者的差距，就是壓力與適應的訊號。</p></div>
+<div class="card"><h3>AI 帶人教練</h3><p>結合成員的評測報告，產出一對一怎麼談、怎麼指導的具體建議，執行結果還能記錄回去，作為下次的參考。</p></div>
+<div class="card"><h3>主管簡報與登入摘要</h3><p>幾秒內拿到任何一位成員的重點摘要；每次登入，自動整理誰完成了評測、哪些輔導計畫待處理。</p></div>
+<div class="card"><h3>介面友善</h3><p>操作直覺、好上手，提供包含中文在內的多語言版本。</p></div>
 </div>
-<div class="coach-info">
-<h3><span class="phw"><span class="ph">林逸蓁 Ginger Lin</span></span></h3>
-<div class="coach-title"><span class="phw">人財動態管理 OAD 亞洲合作推廣夥伴</span></div>
-<p class="coach-bio">
-            超過 20 年企業高階經營層幕僚的識人經驗，深知頂尖銷售（Top Closer）與業務領導（Sales Head）是兩種截然不同的行為模式。師承成交大師 Dan Lok，具備高單價成交訓練教練資格與銷售實戰經歷；並以 NLP 專業執行師的訓練，運用<strong>「從屬層級」</strong>與<strong>「卓越模仿（Modeling）」</strong>，把頂尖業務的思考與做法拆解成團隊可複製的步驟，協助企業打造自主運轉的資產型業務團隊。
-          </p>
-<div class="coach-highlights">
-<div class="highlight-item">
-<h4><span class="phw"><span class="ph">暢銷著作與個人品牌</span></span></h4>
-<p><span class="phw"><span class="ph">商管組織類商業暢銷排行</span><span class="ph">《把資歷變資產》作者</span></span></p>
+<h3 class="sub-h">報告長什麼樣子</h3>
+<div class="report-grid">
+<figure class="report-card"><img alt="OAD 官方示範報告：Primary Traits 與 Secondary Traits 圖表" loading="lazy" src="img1.jpg"/><figcaption><b>理想特質 vs. 目前表現</b>該職務理想特質與這位成員目前展現特質的差距。</figcaption></figure>
+<figure class="report-card"><img alt="OAD 官方示範報告：How the Employee Is Wired" loading="lazy" src="img2.jpg"/><figcaption><b>他天生怎麼運作</b>不受工作要求影響、最自然的決策與互動方式。</figcaption></figure>
+<figure class="report-card"><img alt="OAD 官方示範報告：How the Employee Sees The Current World" loading="lazy" src="img3.jpg"/><figcaption><b>他正在怎麼調整自己</b>及早看見他在哪些地方勉強自己，在離職之前介入。</figcaption></figure>
+<figure class="report-card"><img alt="OAD 官方示範報告：What Drives the Employee" loading="lazy" src="img4.jpg"/><figcaption><b>什麼能驅動他</b>什麼樣的環境與授權方式，最能讓他穩定發揮。</figcaption></figure>
 </div>
-<div class="highlight-item">
-<h4><span class="phw"><span class="ph">深度輔導定位</span></span></h4>
-<p><span class="phw"><span class="ph">NLP 從屬層級 × 卓越模仿</span><span class="ph">實戰落地輔導（獨立加值服務）</span></span></p>
+<p class="fine">節錄自 OAD 官方示範報告英文原版，非受測者個人資料。<a href="https://oad.ai/profile/" rel="noopener" target="_blank">資料來源：oad.ai/profile ↗</a></p>
 </div>
-<div class="highlight-item">
-<h4><span class="phw"><span class="ph">專業諮詢窗口</span></span></h4>
-<p><span class="phw"><span class="ph">LINE 官方客服諮詢：</span><span class="ph">@elites888</span></span></p>
+</section>
+
+<!-- ROI -->
+<section class="section band-dark" id="roi">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">導入 OAD 前後</span>
+<h2>不再靠猜，<span class="ph">會有什麼改變？</span></h2>
 </div>
+<div class="roi">
+<div class="roi-table">
+<p class="roi-title">40 人業務團隊｜導入 OAD 前後</p>
+<div class="roi-grid">
+<span class="roi-h"></span><span class="roi-h">導入前</span><span class="roi-h">導入後</span>
+<span class="roi-k">一年離職率</span><span class="roi-b">32%</span><span class="roi-a">18%</span>
+<span class="roi-k">達成業績目標的業務</span><span class="roi-b">41%</span><span class="roi-a">67%</span>
+<span class="roi-k">新人平均上手時間</span><span class="roi-b">7.2 個月</span><span class="roi-a">4.8 個月</span>
+<span class="roi-k">每年錯聘成本</span><span class="roi-b">190 萬美金</span><span class="roi-a">76 萬美金</span>
+</div>
+</div>
+<div class="roi-cards">
+<div class="roi-card"><p class="roi-label">錯聘成本降低</p><p class="roi-big">每年省下 114 萬美金</p><p>40 人的業務團隊，錯聘率從 32% 降到 18%，以每錯聘一人損失 15 萬美金計算。（保守估計）</p></div>
+<div class="roi-card"><p class="roi-label">達標的業務變多</p><p class="roi-big">每年多 830 萬美金營收</p><p>達成目標的業務，從 41% 提升到 67%，以每位業務年度目標 80 萬美金計算。（依 OAD 客戶平均值）</p></div>
+<div class="roi-card"><p class="roi-label">新人更快上手</p><p class="roi-big">每位新人多創造 16 萬美金產值</p><p>上手時間從 7.2 個月縮短到 4.8 個月，等於每位新人每年多做 2.4 個月的業績。</p></div>
+</div>
+</div>
+<p class="roi-note">以上為 OAD 官方公布的示範案例，金額以美國薪資水準計算，實際成效依企業狀況而異。想用台灣的數字估算，可以使用下方的 OAD 官方試算器。<a href="https://oad.ai/vp-sales/" rel="noopener" target="_blank">資料來源：oad.ai/vp-sales ↗</a></p>
+</div>
+</section>
+
+<!-- WHY ME -->
+<section class="section" id="about">
+<div class="wrap">
+<div class="about">
+<div class="about-photo">
+<img alt="Ginger Lin 林逸蓁" height="1024" loading="lazy" src="ginger.jpg" width="682"/>
+<p class="about-name">Ginger Lin 林逸蓁</p>
+<p class="about-role">頂尖業務複製顧問｜《把資歷變資產》作者</p>
+<a class="about-link" href="https://ginger.elites888.com" rel="noopener" target="_blank">認識更多 Ginger：個人品牌網站 ↗</a>
+</div>
+<div class="about-body">
+<span class="eyebrow">關於 Ginger</span>
+<h2 class="about-hook">我不是您團隊裡最會賣的人。<br/><span class="ph">但我知道，怎麼讓最會賣的那個人的方法，</span><span class="ph">傳給整個團隊。</span></h2>
+<p>我在企業經營層身邊擔任幕僚 20 多年，也負責過人才發展。我每天的工作，就是解決老闆說出口與沒說出口的問題。服務老闆，思考的高度與角度，往往比服務客戶需要考量更多面向。</p>
+<p>這些年，我看過很多中小企業靠一兩個人撐業績；升了最會銷售的人當主管，團隊卻開始掉業績；花錢上課，下課後一切回到原點。問題從來不是業務不努力，而是頂尖業務的方法，一直沒有被找出來、傳下去。</p>
+<div class="creds">
+<div class="cred"><h4>1. 理解老闆</h4><p>20 多年經營層幕僚與人才發展經驗。理解老闆在意的優先順序，也理解一個決定要在組織裡推動，需要顧到哪些人、哪些環節。</p></div>
+<div class="cred"><h4>2. 對人的洞察</h4><p>多年在組織裡觀察人、發展人，再加上 NLP 專業執行師（美國 ABNLP）的訓練：</p>
+<ul class="dash-list">
+<li><strong>複製卓越策略（Modeling Excellence）</strong>：找出頂尖業務連自己都說不清楚的成交心法，讓每位員工都能成為公司的資產。</li>
+<li><strong>從屬層級（Logical Levels）</strong>：從「我是誰」開始改變業務對銷售的看法，讓每個人從「我有可能做到嗎？」轉成「我要怎麼做到？」。</li>
+<li>結合 OAD 的行為科學數據，看懂每個人適合的位置與帶法。</li>
+</ul>
+<p class="fine-in">NLP 在學術界仍有不同看法，所以我不談神奇效果，只用其中兩套經得起檢驗的方法：「複製卓越」的原理，與認知心理學用來萃取專家隱性知識的「認知任務分析」相近，整合研究顯示以這種方式設計的訓練成效相當顯著（<a href="https://digitalcommons.usu.edu/itls_facpub/384" rel="noopener" target="_blank">Tofel-Grehl &amp; Feldon, 2013</a>）；「從屬層級」則是我在實務上，用來對齊信念與行為的架構工具。</p></div>
+<div class="cred"><h4>3. 成交實戰與教練資格</h4><p>師承 Dan Lok，具備高單價成交訓練教練資格，也有第一線銷售實戰經驗。合作企業可同時獲得我的高單價成交線上課程。</p></div>
+<div class="cred"><h4>4. GPHR® 與就業服務專業</h4><p>持有美國 HRCI 全球人力資源管理師（Global Professional in Human Resources，GPHR®）、勞動部就業服務乙級技術士證照。除了業務團隊，也能協助企業處理跨國人力配置與聘用；並可從學院培養的人才中，為企業引薦合適人選。</p></div>
+<div class="cred"><h4>5. 專業形象</h4><p>持有日本 KOZU Style 專業形象顧問認證，由 AICI 國際形象顧問協會（Association of Image Consultants International）日本分會前會長神津佳予子一對一授課。業務給客戶的第一印象，也是成交的一部分；從外在形象到內在認同，一起提升。</p></div>
+</div>
+<div class="about-book about-book-noimg">
+<p class="about-close">我把「資產型人才」的方法論系統化，寫成《把資歷變資產》。書裡不只寫給想讓經歷增值的工作者，也寫給想打造資產型人才團隊的經營者。<br/>每家公司最珍貴的資產，往往是那一兩位頂尖業務；但他們的成交心法，常常跟著人一起離開。<br/>作為頂尖業務複製顧問，我陪企業<strong>把這份卓越找出來、放大，傳給整個團隊。</strong></p>
+<a class="btn btn-outline-ink book-btn" href="https://book.elites888.com" rel="noopener" target="_blank">了解更多《把資歷變資產》 ↗</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- 免費體驗預約 BOOKING -->
-<section class="section" id="booking">
+
+<!-- OAD × Ginger -->
+<section class="section" id="synergy" style="background:#FBF9F5;">
 <div class="wrap">
 <div class="section-head">
-<span class="eyebrow">FREE TRIAL RESERVATION</span>
-<h2><span class="phw"><span class="ph">預約 1 次免費</span><span class="ph"> TOP1業務績效者解讀</span></span></h2>
-<p><span class="phw"><span class="ph">填寫下方表單，</span><span class="ph">顧問團隊將在 24 小時內與您聯繫，</span><span class="ph">安排 1 對 1 線上深度解讀。</span></span></p>
+<span class="eyebrow">OAD 與 Ginger 的綜效</span>
+<h2><span class="ph">OAD 看得準，</span><span class="ph">Ginger 做得到。</span></h2>
 </div>
-<div class="booking-box">
-<form action="https://formsubmit.co/gingerlin0919@gmail.com" id="bookingForm" method="POST">
-<input name="_subject" type="hidden" value="【OAD 官網】新的免費體驗預約申請"/>
+<p class="section-lead">OAD 的 AI 帶人教練，依每位成員的評測報告，給出一對一怎麼談、怎麼指導的建議。Ginger 再結合貴公司的溝通風格與文化，陪主管把建議落實到每天的帶人現場。</p>
+<div class="callout">
+<strong>示意情境</strong>
+<p>一位業務很拼，卻一直開發新客戶、遲遲不收尾，經過了解，是最近家裡剛有新生兒。主管描述狀況後，AI 帶人教練把問題拆成三個重點，各自附上可以怎麼談，才能兼顧公司與員工的處境。<span class="muted">（示意情境，取自 OAD 官方產品示範）</span></p>
+</div>
+<div class="cmp-wrap" style="margin-top:36px;">
+<table class="cmp cmp-ai">
+<thead><tr><th>OAD 的角色</th><th>Ginger 的角色</th></tr></thead>
+<tbody>
+<tr><th scope="row">評測報告只是起點；沒有接下來的行動，再好的報告也只是一份文件。</th><td data-label="Ginger 的角色"><strong>幫主管問對問題</strong>：AI 的建議取決於狀況怎麼描述。Ginger 以外部顧問的客觀立場，把「他很不積極」這種抽象評價，換成具體的事實。</td></tr>
+<tr><th scope="row">產出一對一的對話與指導建議</th><td data-label="Ginger 的角色"><strong>陪主管把話說出口</strong>：現場演練，修正語氣、時機與肢體表達，讓建議變成主管自己的話。</td></tr>
+<tr><th scope="row">適用全球企業的行為科學建議</th><td data-label="Ginger 的角色"><strong>換成台灣職場聽得進去的說法</strong>：結合 20 年在企業主身邊的經驗，配合公司文化與企業主的期待調整。</td></tr>
+<tr><th scope="row">處理「主管和某位特定部屬」的問題</th><td data-label="Ginger 的角色"><strong>讓整個團隊上下同欲</strong>：讓企業主、主管、業務的方向一致，並針對獎金與升遷路徑提出調整建議（例如「首席業務」制度），必要時與薪酬專業顧問協作。</td></tr>
+<tr><th scope="row">針對行為和溝通給方向</th><td data-label="Ginger 的角色"><strong>補上成交力</strong>：高單價成交訓練，加上複製頂尖業務的成交心法。</td></tr>
+</tbody>
+</table>
+</div>
+<p class="section-lead" style="margin-top:28px;">導入時，Ginger 會先陪主管建立「幫助部門達標」的帶人出發點，並讓團隊清楚資料的用途。團隊信任工具，建議才能被聽進去，效果也最大。</p>
+<p class="pullquote">工具讓主管更懂人，Ginger 讓效果落實。</p>
+</div>
+</section>
+
+<!-- 錯聘、錯升的代價 -->
+<section class="section" id="cost">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">錯聘、錯升的代價</span>
+<h2>以 50 人團隊為基礎，<span class="ph">OAD 年度訂閱每個月不到 835 美金。</span></h2>
+<p class="section-sub">但，真正的成本，不是一份評測多少錢。</p>
+</div>
+<div class="stat-row">
+<div class="stat"><span class="stat-num">5<small>倍</small></span><p>錯聘一位業務的代價，約是底薪的倍數</p></div>
+<div class="stat"><span class="stat-num">27<small>倍</small></span><p>如果是高階主管，代價可達年薪的倍數</p></div>
+<div class="stat"><span class="stat-num">0.5–2<small>倍</small></span><p>光是替換一位離職員工，就要花掉的年薪倍數</p></div>
+</div>
+<p class="fine">前兩項為美國選才顧問公司 <a href="https://blog.topgrading.com/new-blog/resources/blog/the-high-costs-of-mis-hires-are-higher-than-you-think" rel="noopener" target="_blank">Topgrading</a> 的估計；第三項為 <a href="https://www.gallup.com/workplace/247391/fixable-problem-costs-businesses-trillion.aspx" rel="noopener" target="_blank">Gallup</a> 的估計。</p>
+<div class="calc-box">
+<div>
+<h3>用 OAD 官方試算器，算算看您的公司</h3>
+<p class="muted">試算器為英文，金額以美金計。三個步驟就能填完：</p>
+<ol class="calc-steps">
+<li>職務類型選「Sales / Revenue」，填入團隊人數、一年離職人數。</li>
+<li>平均底薪換算成美金填入（例如月薪 4.5 萬台幣，年薪約 1.7 萬美金）。</li>
+<li>填入「新人第一年比熟手少做的業績」與毛利率，結果會即時算出。</li>
+</ol>
+</div>
+<a class="btn btn-gold" href="https://oad.ai/turnover-calculator/" rel="noopener" target="_blank">開啟 OAD 官方試算器 ↗</a>
+</div>
+<h3 class="sub-h">錯升一位業務主管的代價（範例）</h3>
+<div class="cmp-wrap">
+<table class="cmp cmp-cost">
+<thead><tr><th>項目</th><th>算法</th><th>範例金額</th></tr></thead>
+<tbody>
+<tr><th scope="row">他自己少做的業績</th><td data-label="算法">升任前每月毛利 20 萬，升任後只剩 3 成，持續 12 個月</td><td data-label="範例金額" class="num">168 萬</td></tr>
+<tr><th scope="row">團隊業績下滑</th><td data-label="算法">6 位部屬 × 每人每月毛利 6 萬 × 下滑 7.5% × 12 個月</td><td data-label="範例金額" class="num">32.4 萬</td></tr>
+<tr><th scope="row">多走一位部屬</th><td data-label="算法">年薪 54 萬 × 替換成本 0.5 倍</td><td data-label="範例金額" class="num">27 萬</td></tr>
+<tr class="total"><th scope="row">合計</th><td data-label="算法"></td><td data-label="範例金額" class="num">約 227 萬</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fine">以上為範例粗估，不是精算；下滑 7.5% 為研究平均參考值，請依實際狀況調整。</p>
+</div>
+</section>
+
+<!-- 體驗申請 -->
+<section class="section founding">
+<div class="wrap">
+<div class="founding-box">
+<span class="eyebrow">體驗申請</span>
+<h2>免費頂尖業務報告診斷乙次</h2>
+<p>已為台灣企業申請到「頂尖業務免費輪廓分析」乙名：請貴公司最頂尖的業務完成約七分鐘的評測，24 小時內取得報告，再由 Ginger 為您解讀，找出值得複製的關鍵特質。不需要提供信用卡，也不需要任何合作承諾。</p>
+<a class="btn btn-gold" href="#book">申請對談</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="process" style="background:#FBF9F5;">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow"><span class="phw"><span class="ph">對談流程</span></span></span>
+<h2><span class="phw"><span class="ph">不是先決定導入工具，</span></span><br/><span class="phw"><span class="ph">而是先確認真正需要處理的問題。</span></span></h2>
+</div>
+<div class="timeline">
+<div class="tl-step">
+<span class="tl-num">01</span>
+<div><h4><span class="phw"><span class="ph">填寫企業現況</span></span></h4><p><span class="phw"><span class="ph">提供公司與團隊規模、</span><span class="ph">目前的人才課題、</span><span class="ph">涉及職位，</span><span class="ph">以及已使用的測評或人才制度。</span></span></p></div>
+</div>
+<div class="tl-step">
+<span class="tl-num">02</span>
+<div><h4><span class="phw"><span class="ph">進行線上對談</span></span></h4><p><span class="phw">以30～45分鐘了解問題目前如何被看見、<span class="ph">現有資料能回答什麼，</span><span class="ph">以及還缺少哪些關鍵資訊。</span></span></p></div>
+</div>
+<div class="tl-step">
+<span class="tl-num">03</span>
+<div>
+<h4><span class="phw"><span class="ph">提出下一步建議</span></span></h4>
+<p>可能結果：</p>
+<ul>
+<li><span class="phw">暫時不需<span class="ph">要導入評測</span></span></li>
+<li><span class="phw">先釐清職務<span class="ph">或管理問題</span></span></li>
+<li><span class="phw">選擇小規模對象進行<span class="ph">評測與解讀</span></span></li>
+<li><span class="phw"><span class="ph">進一步規劃人才盤點、</span><span class="ph">團隊或接班應用</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+<div style="text-align:center; margin-top:48px;">
+<a class="btn btn-outline-ink" href="#book"><span class="phw"><span class="ph">進一步了解</span></span></a>
+</div>
+</div>
+</section>
+<section class="section" id="faq">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">常見問題</span>
+<h2>您可能想先知道</h2>
+</div>
+<div class="faq">
+<details name="faq-group">
+<summary>可以只使用 Ginger 的服務，不導入 OAD 嗎？<span class="plus"></span></summary>
+<p class="faq-body">可以。例如企業內訓或工作坊、複製頂尖業務的成交心法、高單價成交訓練，都可以單獨進行。差別在於少了行為數據，選人、升主管與帶人的客觀判斷，會更依賴現場觀察與訪談。</p>
+</details>
+<details name="faq-group">
+<summary>OAD 與 Ginger 結合，跟單獨使用 OAD 有什麼不同？<span class="plus"></span></summary>
+<p class="faq-body">單獨使用 OAD，企業拿到的是行為數據與建議，接下來要靠企業自己落實。結合 Ginger，您將會得到這幾件事：</p>
+<ul class="faq-list">
+<li><strong>幫主管問對問題</strong>：Ginger 運用 NLP 的框架提問訓練，把「他很不積極」這種抽象評價，換成具體的事實，讓建議更精準。</li>
+<li><strong>陪主管把話說出口</strong>：結合高單價成交教練的實戰訓練，以及日本 KOZU Style 專業形象顧問的專業，現場演練一對一，修正語氣、時機與肢體表達。</li>
+<li><strong>換成貴公司聽得進去的做法</strong>：以 20 年經營層幕僚的經驗，配合公司文化與企業主的期待調整。</li>
+<li><strong>獎金與升遷路徑的調整建議</strong>：以 GPHR® 全球人力資源管理師的薪酬與人才管理專業，提出例如「首席業務」制度的建議，必要時與薪酬專業顧問協作。</li>
+<li><strong>補上成交力</strong>：以 NLP 專業執行師的複製卓越策略，找出頂尖業務的成交心法，再加上師承 Dan Lok 的高單價成交訓練。</li>
+</ul>
+</details>
+<details name="faq-group">
+<summary>OAD 的 AI 帶人教練，跟 ChatGPT 或企業版 AI 有什麼不同？<span class="plus"></span></summary>
+<p class="faq-body">一般 AI 只能根據使用者描述的內容回答，不認識這位成員，給的多半是通用建議。OAD 的 AI 帶人教練則以這位成員的評測結果與 OAD 38 年的行為科學模型為基礎，會追問細節，並把每次執行的結果記錄下來，作為下次的參考。</p>
+<p class="faq-body">更重要的是，每一次評測與輔導紀錄，都會累積成企業自己的人才數據：誰適合什麼位置、怎麼帶最有效、誰正在成長。培養資產型人才，靠的是長期累積的數據，而不是每次憑感覺重新開始。這些數據會隨時間增值，是對企業長期成長的正確投資。</p>
+</details>
+<details name="faq-group">
+<summary>企業可以自己使用 OAD 的 AI 帶人教練嗎？<span class="plus"></span></summary>
+<p class="faq-body">可以申請。AI 帶人教練開放給完成 OAD 原廠訓練並通過認證的使用者，取得資格後，每年需持續進修以維持資格。若貴公司希望由內部主管或 HR 直接使用，可以在對談時提出，Ginger 會協助說明申請方式。</p>
+</details>
+<details name="faq-group">
+<summary>為什麼要用行為科學，而不是看履歷和面試就好？<span class="plus"></span></summary>
+<p class="faq-body">履歷記錄的是一個人做過什麼，面試看到的是他當下怎麼表達。整合數十年選才研究的分析發現，和工作直接相關、以「在工作中會怎麼做」為出發點的評量，預測力明顯較高。OAD 用的正是這種方式，看的是一個人在工作情境中的行為傾向。</p>
+</details>
+<details name="faq-group">
+<summary>OAD 和一般評測有什麼不同？<span class="plus"></span></summary>
+<p class="faq-body">市面上的評測，多半擅長描述一個人是什麼類型、溝通風格如何，或是領導上可能有哪些盲點。OAD 的差別在三個地方：</p>
+<ul class="faq-list">
+<li><strong>專為業務型團隊設計</strong>：以公司自己的頂尖業務為標準，比對應徵者與升遷人選，直接對應業績與成交。</li>
+<li><strong>不只看「他是誰」</strong>：同時看他自然的樣子，以及他認為工作要求他的樣子，用兩者的差距看出壓力、適應與離職風險，而不是貼一個類型標籤。</li>
+<li><strong>不只是一份報告</strong>：OAD 是一整套協助企業主與主管管理的指導系統，從評測、AI 帶人教練、主管簡報到後續追蹤，讓報告真正用在每天的帶人現場。</li>
+</ul>
+</details>
+<details name="faq-group">
+<summary>報告會呈現什麼？<span class="plus"></span></summary>
+<p class="faq-body">報告會呈現這位成員天生的做事方式、他目前正在怎麼調整自己、什麼樣的環境與授權最能驅動他，以及他和該職務理想特質之間的差距。上方「報告長什麼樣子」有官方示範報告的節錄。</p>
+</details>
+<details name="faq-group">
+<summary>OAD 可以直接判斷一個人是否適任嗎？<span class="plus"></span></summary>
+<p class="faq-body">不建議用任何單一測評斷定人才是否適任。OAD 提供的是和工作動機相關的行為資料，仍需搭配職務要求、專業能力、績效證據、結構化面談，以及 HR 與用人主管的判斷。</p>
+</details>
+<details name="faq-group">
+<summary>1,000 萬筆資料多是歐美的數據，適合華人或亞洲企業嗎？<span class="plus"></span></summary>
+<p class="faq-body">華人看人，從來不是非黑即白的二分法。《易經》談了數千年的陰陽變化，儒家講中庸，關注的都是一個人如何因時因地調整自己。OAD 的設計正好接近這種看法：它不用選擇題或是非題，而是請受測者從一組形容詞中，挑出最符合自己的詞，看的是一個人在不同情境下如何動態調整，而不是把人一次歸類。這種「強迫選擇」的作答方式，也是心理測量學界用來降低不同文化作答習慣差異的方法之一。當然，文化差異仍需要留意；OAD 官網並未公開亞洲樣本的詳細比例，建議在對談時依貴公司實際使用族群進一步確認。</p>
+</details>
+<details name="faq-group">
+<summary>評測需要多久？有中文介面嗎？<span class="plus"></span></summary>
+<p class="faq-body">約七分鐘，題目採選詞形式作答，建議在不被打斷的情況下完成。OAD 提供包含中文在內的多語言版本，介面與題目都可以切換為中文。</p>
+</details>
+<details name="faq-group">
+<summary>導入費用很高嗎？<span class="plus"></span></summary>
+<p class="faq-body">OAD 依團隊規模與使用量提供年度方案，50 人團隊的基礎方案為每年一萬美金。比起投資金額，更值得先釐清的是：一次錯誤招募、一次錯誤升遷，或一位關鍵人才的流失，實際會讓您付出多少成本。您可以先用上方的 OAD 官方試算器大致估算。<a href="https://oad.ai/pricing/" rel="noopener" target="_blank">OAD 官方方案說明 ↗</a></p>
+</details>
+<details name="faq-group">
+<summary>有免費試用嗎？<span class="plus"></span></summary>
+<p class="faq-body">已為台灣企業申請到「頂尖業務免費輪廓分析」乙名（Free Top Performer Profile）。完成評估只需七分鐘，24 小時內即可取得結果，不需要提供信用卡，也不需要任何合作承諾。</p>
+</details>
+<details name="faq-group">
+<summary>頂尖業務會不會不願意分享？<span class="plus"></span></summary>
+<p class="faq-body">會，這是人之常情。所以我們不要求他無私，而是讓分享對他更有利：帶人有回報、傳承有舞台。</p>
+</details>
+<details name="faq-group">
+<summary>預約線上對談，會被推銷嗎？<span class="plus"></span></summary>
+<p class="faq-body">不會。對談會先了解您目前的人才課題、企業規模與既有制度，協助釐清問題出在能力、管理方式，還是人才配置。只有在評測確實能補足現有資訊時，才會討論後續應用方式。</p>
+</details>
+<details name="faq-group">
+<summary>評測資料會如何被使用？能與公司原本的系統整合嗎？<span class="plus"></span></summary>
+<p class="faq-body">資料僅用於約定的評測、解讀與人才管理討論，不會在未經同意的情況下提供給無關第三方。若正式導入，企業也應事先向參與者說明評測目的、使用範圍與資料保存方式。OAD 可依方案提供 ATS／HRIS 系統整合，實際串接方式會在對談中依貴公司現有系統確認。</p>
+</details>
+</div>
+</div>
+</section>
+
+<section class="cta-final">
+<div class="wrap">
+<h2><span class="phw"><span class="ph">在投入更多招募、</span><span class="ph">培育與留才成本以前，</span></span><br/><span class="phw"><span class="ph">先確認問題到底在哪裡。</span></span></h2>
+<p class="lead"><span class="phw">如果您還不確定，現在面對的是能力問題、管理問題，還是人才配置問題，可以先透過一場線上對談，整理現況與需要補<span class="ph">足的資訊。</span></span></p>
+<a class="btn btn-gold" href="#book">預約線上對談</a>
+<p class="below"><span class="phw"><span class="ph">適合50人以上，</span><span class="ph">正準備進行關鍵人才盤點、</span><span class="ph">接班布局、</span><span class="ph">關鍵招募或組織調整的部門或企業。</span></span></p>
+<p class="trust"><span class="phw">您提供的資料只用於本次需求判斷與對談安排；未經同意，不會提供給其他單位，也不會以評測結果取代企業的<span class="ph">用人判斷。</span></span></p>
+</div>
+</section>
+<!-- 預約表單 -->
+<section class="section" id="book">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow"><span class="phw"><span class="ph">預約表單</span></span></span>
+<h2>留下資訊，<span class="ph">與您進一步對談。</span></h2>
+</div>
+<form action="https://formsubmit.co/gingerlin0919@gmail.com" class="form-card" id="bookingForm" method="POST" novalidate="">
+<input name="_subject" type="hidden" value="【OAD 官網】新的預約對談申請"/>
+<input name="_template" type="hidden" value="table"/>
 <input name="_captcha" type="hidden" value="false"/>
-<div class="form-grid">
-<div class="form-group">
-<label for="f-name">聯絡人姓名 *</label>
-<input id="f-name" name="name" placeholder="例如：王大明" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="f-title">職稱 *</label>
-<input id="f-title" name="title" placeholder="例如：業務副總 / 人資長 / 創辦人" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="f-company">企業名稱 *</label>
-<input id="f-company" name="company" placeholder="例如：創新科技股份有限公司" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="f-email"><span class="phw">公司 <span class="ph">Email *</span></span></label>
-<input id="f-email" name="email" placeholder="name@company.com" required="" type="email"/>
-</div>
-<div class="form-group">
-<label for="f-phone">聯絡手機 *</label>
-<input id="f-phone" name="phone" placeholder="0912-345-678" required="" type="tel"/>
-</div>
-<div class="form-group">
-<label for="f-scale"><span class="phw">企業員<span class="ph">工規模 *</span></span></label>
-<select id="f-scale" name="scale" required="">
-<option disabled="" selected="" value="">請選擇規模</option>
-<option value="20人以下">20 人以下</option>
-<option value="20-50人">20 - 50 人</option>
-<option value="50-100人">50 - 100 人</option>
-<option value="100-300人">100 - 300 人</option>
-<option value="300人以上">300 人以上</option>
+<div class="field"><label for="f-name">姓名</label><input id="f-name" name="name" required="" type="text"/></div>
+<div class="field"><label for="f-company">公司名稱</label><input id="f-company" name="company" required="" type="text"/></div>
+<div class="field"><label for="f-title">職稱</label><input id="f-title" name="title" required="" type="text"/></div>
+<div class="field"><label for="f-email">Email</label><input id="f-email" name="email" required="" type="email"/></div>
+<div class="field"><label for="f-phone">聯絡電話 <span class="opt"><span class="phw"><span class="ph">（選填）</span></span></span></label><input id="f-phone" name="phone" type="tel"/></div>
+<div class="field">
+<label for="f-lang">偏好語言</label>
+<select id="f-lang" name="language" required="">
+<option disabled="" selected="" value="">請選擇</option>
+<option>中文</option>
+<option>英文</option>
 </select>
 </div>
-<div class="form-group full">
-<label for="f-topic"><span class="phw">目前最希望解決的人才管<span class="ph">理挑戰 *</span></span></label>
+<div class="field">
+<label for="f-size">公司人數</label>
+<select id="f-size" name="size" required="">
+<option disabled="" selected="" value="">請選擇</option>
+<option>50人以下</option>
+<option>50～99人</option>
+<option>100～249人</option>
+<option>250～499人</option>
+<option>500人以上</option>
+</select>
+</div>
+<div class="field full">
+<label for="f-topic"><span class="phw">目前最希望處理<span class="ph">的人才課題</span></span></label>
 <select id="f-topic" name="topic" required="">
-<option disabled="" selected="" value="">請選擇核心議題</option>
-<option value="TOP1業務績效者：複製頂尖業務成交力">TOP1業務績效者：複製頂尖業務成交力</option>
-<option value="TOP1主管績效者：預防晉升不適任主管">TOP1主管績效者：預防晉升不適任主管</option>
-<option value="動態管理：季度追蹤人才行為與壓力偏離">動態管理：季度追蹤人才行為與壓力偏離</option>
-<option value="全面組織診斷與團隊行為模式對齊">全面組織診斷與團隊行為模式對齊</option>
-<option value="一站式服務：OAD 測評＋Ginger 落地輔導＋高單價成交課程">一站式服務：OAD 測評＋Ginger 落地輔導＋高單價成交課程</option>
+<option disabled="" selected="" value="">請選擇</option>
+<option>業績只靠少數人</option>
+<option>業務主管升遷</option>
+<option>業務招募</option>
+<option>主管不知道怎麼帶人</option>
+<option>關鍵人才盤點</option>
+<option>接班布局</option>
+<option>招募與適配</option>
+<option>主管培育</option>
+<option>團隊衝突</option>
+<option>留才與投入感</option>
+<option>組織調整</option>
+<option>其他</option>
 </select>
 </div>
-<div class="form-group full">
-<label for="f-time"><span class="phw">方便安排 30 分鐘線上面談<span class="ph">的時間區段</span></span></label>
-<input id="f-time" name="preferred_time" placeholder="例如：每週二或週四下午 14:00 - 17:00" type="text"/>
+<div class="field full"><label for="f-desc"><span class="phw">請簡述<span class="ph">目前的情況</span></span></label><textarea id="f-desc" name="description" required=""></textarea></div>
+<div class="field full">
+<label for="f-used"><span class="phw">是否使用過<span class="ph">人才測評？</span></span></label>
+<select id="f-used" name="used" required="">
+<option disabled="" selected="" value="">請選擇</option>
+<option>尚未使用</option>
+<option>曾經使用</option>
+<option>目前持續使用</option>
+</select>
 </div>
-<div class="form-group full" style="margin-top: 10px;">
-<button class="btn btn-gold" id="submitBtn" style="width: 100%; padding: 14px; font-size: 16px;" type="submit">送出資料並預約免費體驗</button>
+<div class="field full">
+<label for="f-time1">近一個月內您方便會談的三個時間 <span class="opt"><span class="phw"><span class="ph">（請依優先順序填寫）</span></span></span></label>
+<div class="time-slots">
+<input id="f-time1" name="time1" placeholder="優先順序 1，例如：8/25（二）下午2:00–3:00" required="" type="text"/>
+<input id="f-time2" name="time2" placeholder="優先順序 2" required="" type="text"/>
+<input id="f-time3" name="time3" placeholder="優先順序 3" required="" type="text"/>
 </div>
 </div>
-<div class="form-msg success" id="formMsgSuccess"><span class="phw">
-            <span class="ph">✓ 已成功送出申請！</span>顧問團隊將在 24 小時內與您聯繫確認解讀時間。
-          </span></div>
-<div class="form-msg error" id="formMsgError"><span class="phw">
-            <span class="ph">送出時發生問題，</span><span class="ph">麻煩直接加入 LINE 客服諮詢：</span><span class="ph">@elites888，</span><span class="ph">我們將即刻為您處理。</span>
-          </span></div>
+<label class="consent">
+<input id="f-consent" name="consent" required="" type="checkbox"/>
+<span><span class="phw">我同意所提供的資料僅用於本次需求判斷、<span class="ph">對談安排與必要聯繫，</span><span class="ph">並已閱讀</span></span><a href="/privacy.html" rel="noopener" target="_blank"><span class="phw"><span class="ph">隱私權政策</span></span></a>。</span>
+</label>
+<!-- dev note: submits via FormSubmit.co (AJAX endpoint, no page reload) to gingerlin0919@gmail.com.
+             IMPORTANT one-time step: the first submission after this form goes live triggers FormSubmit to send
+             an "Activate Form" confirmation email to gingerlin0919@gmail.com — until that link is clicked,
+             submissions will not be delivered. Submit one test entry after launch and check that inbox (and spam). -->
+<div class="form-msg" id="formMsg" role="status">謝謝您! 完成送單，我們會在一週內與您聯繫，確認線上面談時間及與會人員。若有任何疑問，請email給Ginger：<a href="mailto:gingerlin0919@gmail.com" style="color:var(--ink-2); text-decoration:underline;">gingerlin0919@gmail.com</a></div>
+<div class="form-msg" id="formErr" role="alert" style="border-left-color:#9c3b3b; background:rgba(156,59,59,0.08);">送出時發生問題，麻煩直接email給Ginger：<a href="mailto:gingerlin0919@gmail.com" style="color:var(--ink-2); text-decoration:underline;">gingerlin0919@gmail.com</a>，並附上您方便的聯絡方式，謝謝您的耐心。</div>
+<div class="form-submit"><button class="btn btn-gold" type="submit">送出資料並預約線上對談</button></div>
 </form>
 </div>
-</div>
 </section>
-<!-- 頁尾 FOOTER (雙品牌高清呈現，徹底解決亂碼與破圖) -->
-<footer class="site-footer">
+</main>
+<div class="sticky-cta">
+<a class="btn btn-gold" href="#book"><span class="phw"><span class="ph">預約對談</span></span></a>
+</div>
+<footer>
 <div class="wrap">
-<div class="footer-inner">
-<!-- 雙品牌區塊 -->
-<div class="footer-brand-wrap">
-<!-- OAD 原廠標誌 -->
-<div style="display: flex; align-items: center; gap: 14px;">
-<div class="footer-logo-card">
-<img alt="OAD Organization Analysis &amp; Design" class="footer-logo-img" src="oad-logo.png"/>
-</div>
+<div class="foot-top">
 <div>
-<h4 style="font-size: 16px; color: #FFFFFF; font-weight: 700; margin-bottom: 2px;">OAD<span style="color:var(--gold);">.ai</span></h4>
-<p style="font-size: 12px; color: var(--text-muted); margin: 0;"><span class="phw">行為科學驅動的動態人<span class="ph">財管理系統</span></span></p>
+<div class="foot-name">Ginger Lin 林逸蓁</div>
+<div class="foot-role">頂尖業務複製顧問｜《把資歷變資產》作者｜企業經營層幕僚 20 年</div>
+<div class="foot-contact"><a href="https://line.me/R/ti/p/@elites888" rel="noopener" target="_blank">LINE 官方帳號 @elites888</a><a href="https://ginger.elites888.com" rel="noopener" target="_blank">Ginger 個人品牌網站</a></div>
+<div class="foot-oad">
+<img alt="OAD — Organization Analysis &amp; Design" class="foot-oad-logo" src="img5.png"/>
 </div>
 </div>
-<!-- 分隔線 -->
-<div style="width: 1px; height: 42px; background: rgba(212, 175, 55, 0.3); margin: 0 4px;"></div>
-<!-- 亞洲合作夥伴：職感菁英學院 -->
-<div style="display: flex; align-items: center; gap: 14px;">
-<div class="footer-logo-card" style="padding: 4px; border-radius: 8px; background: rgba(255, 255, 255, 0.03);">
-<img alt="職感菁英學院 THE ELITE ACADEMY" class="footer-logo-img" src="elite-academy-logo.png" style="height: 52px; width: 52px; border-radius: 6px; object-fit: cover;"/>
-</div>
-<div>
-<div style="display: inline-block; padding: 4px 10px; font-size: 12px; font-weight: 700; color: #0A0C10; background: linear-gradient(135deg, #D4AF37, #B88E28); border-radius: 4px; letter-spacing: 0.5px;">亞洲合作夥伴</div>
+<div class="foot-links">
+<a href="https://oad.ai/" rel="noopener" target="_blank"><span class="phw"><span class="ph">OAD官方網站</span></span></a>
+<a href="/privacy.html"><span class="phw"><span class="ph">隱私權政策</span></span></a>
+<a href="mailto:gingerlin0919@gmail.com"><span class="phw"><span class="ph">亞洲聯繫窗口：</span>gingerlin0919@gmail.com</span></a>
 </div>
 </div>
-</div>
-<!-- 頁尾導覽連結 -->
-<nav aria-label="頁尾導覽">
-<ul class="footer-nav">
-<li><a href="#hero">首頁</a></li>
-<li><a href="#dashboard"><span class="phw"><span class="ph">如何動態管理</span></span></a></li>
-<li><a href="#audiences"><span class="phw"><span class="ph">應用場景</span></span></a></li>
-<li><a href="#comparison"><span class="phw"><span class="ph">工具比較</span></span></a></li>
-<li><a href="#journey"><span class="phw"><span class="ph">一站式服務</span></span></a></li>
-<li><a href="#coach"><span class="phw"><span class="ph">輔導顧問</span></span></a></li>
-<li><a href="#booking"><span class="phw"><span class="ph">免費體驗預約</span></span></a></li>
-</ul>
-</nav>
-</div>
-<!-- 頁尾版權與認證資訊 -->
-<div class="footer-bottom">
-<p>本站為 OAD（Organization Analysis &amp; Design）亞洲合作夥伴「職感菁英學院」之繁體中文專題介紹頁。<br/><span class="phw">國際專利、科學模型與評測系統之智慧財產權均屬 OAD <span class="ph">原廠所有。</span></span></p>
-<p style="margin: 0; color: var(--gold-light); font-size: 14px;">
-<strong>LINE 客服諮詢：</strong><a href="https://line.me/R/ti/p/@elites888" rel="noopener" style="color: #4cd964; font-weight: 700; text-decoration: underline;" target="_blank">@elites888</a> ｜ 
-          <strong>顧問諮詢：</strong><a href="mailto:gingerlin0919@gmail.com" style="color: var(--text-body); text-decoration: underline;">gingerlin0919@gmail.com</a>
-</p>
-<p style="margin: 0; font-size: 12px; color: var(--text-muted);"><span class="phw">
-          <span class="ph">人財動態管理 OAD 亞洲合作夥伴</span>
-        </span></p>
-<p style="margin: 0; font-size: 12px; color: var(--text-muted);"><span class="phw">
-          © 2026 OAD &amp; 職感菁英學院. All rights <span class="ph">reserved.</span>
-        </span></p>
-</div>
+<p class="foot-note"><span class="phw">OAD為獨立的第三方評測平台。本頁內容用於人才管理教育與對談說明，不代表評測可以取代企業的<span class="ph">用人決策。</span></span></p>
 </div>
 </footer>
-<!-- 浮動預約按鈕 -->
-<div class="sticky-cta">
-<a class="btn btn-gold" href="#booking" style="box-shadow: 0 8px 24px rgba(0,0,0,0.5);"><span class="phw"><span class="ph">立即免費體驗</span></span></a>
-</div>
-<!-- 互動 JS 腳本 -->
 <script>
-    // Tab 切換
-    function switchTab(index) {
-      const tabBtns = document.querySelectorAll('.tab-btn');
-      const tabPanes = document.querySelectorAll('.tab-pane');
+  (function(){
+    var nav = document.getElementById('siteNav');
+    var onScroll = function(){
+      if (window.scrollY > 40) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    document.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
 
-      tabBtns.forEach((btn, i) => {
-        if (i === index) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // FAQ: ensure only one open at a time (native <details name> already does this in modern browsers;
+    // this is a fallback for browsers without radio-group <details> support)
+    var faqItems = document.querySelectorAll('.faq details');
+    faqItems.forEach(function(d){
+      d.addEventListener('toggle', function(){
+        if (d.open) {
+          faqItems.forEach(function(other){ if (other !== d) other.open = false; });
         }
       });
+    });
 
-      tabPanes.forEach((pane, i) => {
-        if (i === index) {
-          pane.classList.add('active');
-        } else {
-          pane.classList.remove('active');
-        }
-      });
-    }
+    // Booking form: validates, then submits via FormSubmit.co's AJAX endpoint (no page reload)
+    // and emails the result to gingerlin0919@gmail.com. See dev note in the HTML above the form
+    // about the one-time "Activate Form" email FormSubmit sends on first use.
+    var form = document.getElementById('bookingForm');
+    var msg = document.getElementById('formMsg');
+    var errMsg = document.getElementById('formErr');
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var submitBtnDefaultText = submitBtn.textContent;
 
-    // 表單 AJAX 送出
-    const form = document.getElementById('bookingForm');
-    const submitBtn = document.getElementById('submitBtn');
-    const msgSuccess = document.getElementById('formMsgSuccess');
-    const msgError = document.getElementById('formMsgError');
-
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function(e){
       e.preventDefault();
-
+      msg.classList.remove('show');
+      errMsg.classList.remove('show');
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
-
-      const originalText = submitBtn.innerText;
       submitBtn.disabled = true;
-      submitBtn.innerText = '正在傳送預約資料...';
-      msgSuccess.style.display = 'none';
-      msgError.style.display = 'none';
+      submitBtn.textContent = '送出中…';
 
-      const formData = new FormData(form);
-
-      fetch(form.action, {
+      fetch('https://formsubmit.co/ajax/gingerlin0919@gmail.com', {
         method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
       })
-      .then(response => {
-        if (response.ok) {
-          msgSuccess.style.display = 'block';
+        .then(function(res){ if (!res.ok) throw new Error('submit failed'); return res.json(); })
+        .then(function(){
+          msg.classList.add('show');
+          msg.scrollIntoView({behavior:'smooth', block:'center'});
           form.reset();
-          submitBtn.innerText = '預約已送出！';
-          msgSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          msgError.style.display = 'block';
+        })
+        .catch(function(){
+          errMsg.classList.add('show');
+          errMsg.scrollIntoView({behavior:'smooth', block:'center'});
+        })
+        .finally(function(){
           submitBtn.disabled = false;
-          submitBtn.innerText = originalText;
-        }
-      })
-      .catch(error => {
-        msgError.style.display = 'block';
-        submitBtn.disabled = false;
-        submitBtn.innerText = originalText;
-      });
+          submitBtn.textContent = submitBtnDefaultText;
+        });
     });
-  </script>
-</body>
-</html>
+  })();
+</script>
